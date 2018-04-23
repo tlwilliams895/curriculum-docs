@@ -1,9 +1,19 @@
 import sphinx_bootstrap_theme
 
+# -- Curriculum Site Settings ------------------------------------------------
+
+# Customize for the specific site. Any options in the html_theme_options
+# dictionary below may be overriden here
+site_theme_options = {
+    'navbar_title': 'Curriculum Docs',
+    'navbar_site_name': "Pages",
+}
+
+project = 'LaunchCode Curriculum Docs'
 
 # -- Project information -----------------------------------------------------
 
-project = 'LaunchCode Curriculum Docs'
+
 copyright = '2018, LaunchCode'
 author = 'LaunchCode'
 
@@ -31,7 +41,7 @@ source_suffix = ['.rst', '.md']
 # Configure markdown parsing
 source_parsers = {'.md': 'recommonmark.parser.CommonMarkParser'}
 
-html_copy_source = False
+html_copy_source = True
 
 # The master toctree document.
 master_doc = 'index'
@@ -48,7 +58,6 @@ language = None
 # This pattern also affects html_static_path and html_extra_path .
 exclude_patterns = ['_build', 'Thumbs.db', '.DS_Store', 'docs']
 
-# TODO - customize to match styles
 # The name of the Pygments (syntax highlighting) style to use.
 pygments_style = 'sphinx'
 
@@ -65,9 +74,9 @@ html_theme_path = sphinx_bootstrap_theme.get_html_theme_path()
 html_logo = '_static/images/lc-logo.svg'
 
 # Theme-specific options
-html_theme_options = {
+default_theme_options = {
     # Navigation bar title
-    'navbar_title': 'Curriculum Docs',
+    'navbar_title': 'Site',
 
     # Tab name for entire site. (Default: "Site")
     'navbar_site_name': "Pages",
@@ -119,6 +128,8 @@ html_theme_options = {
     'bootswatch_theme': "launchcode",
     'bootstrap_version': "3",
 }
+
+html_theme_options = {**default_theme_options, **site_theme_options}
 
 # Add any paths that contain custom static files (such as style sheets) here,
 # relative to this directory. They are copied after the builtin static files,
