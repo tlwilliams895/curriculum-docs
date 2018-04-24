@@ -62,7 +62,20 @@
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="working.html">Working With An Existing Module Site</a></li>
-<li class="toctree-l1"><a class="reference internal" href="style-guide.html">Style Guide</a></li>
+</ul>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../guide/style.html">Style Guide</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../guide/style.html#headings">Headings</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../guide/style.html#inline-code-formatting">Inline Code Formatting</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../guide/style.html#application-and-ui-labels">Application and UI Labels</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../guide/style.html#code-segments">Code Segments</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../guide/aside-boxes.html">Aside Boxes</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../guide/aside-boxes.html#box-types">Box Types</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../guide/aside-boxes.html#code-editor-snippets">Code Editor Snippets</a></li>
+</ul>
+</li>
 </ul>
 </ul>
 </li>
@@ -109,7 +122,8 @@ Python 3.6.1 :: Continuum Analytics, Inc.
 Python 3.6.5
 </pre></div>
 </div>
-<p>If you don’t have a sufficient Python install, we recommend installing <a class="reference external" href="https://conda.io/miniconda.html">Miniconda</a>.</p>
+<aside class="aside-note"><p>If you are using <code class="docutils literal notranslate"><span class="pre">python3</span></code>, you’ll need to use <code class="docutils literal notranslate"><span class="pre">pip3</span></code> wherever <code class="docutils literal notranslate"><span class="pre">pip</span></code> is used in the sections below.</p>
+</aside><p>If you don’t have a sufficient Python install, we recommend installing <a class="reference external" href="https://conda.io/miniconda.html">Miniconda</a>.</p>
 </div>
 </div>
 <div class="section" id="sphinx-setup">
@@ -128,12 +142,12 @@ Python 3.6.5
 </div>
 <div class="section" id="installing-the-theme-for-development">
 <span id="installing-the-theme-for-development"></span><h3>Installing the theme for development<a class="headerlink" href="#installing-the-theme-for-development" title="Permalink to this headline">¶</a></h3>
-<blockquote>
-<div>Only complete this step if you need to edit the site theme</div></blockquote>
-<p>If you want to make changes to the theme, clone it’s GitHub repo and install the local copy. From the repository directory <code class="docutils literal notranslate"><span class="pre">sphinx-bootstrap-theme/</span></code>, run:</p>
+<aside class="aside-note"><p>Only complete this step if you want to edit the theme for all sites. Otherwise, skip to the next section.</p>
+</aside><p>If you want to make changes to the theme, clone its <a class="reference external" href="https://github.com/LaunchCodeEducation/sphinx-bootstrap-theme">GitHub repo</a>. From the repository directory <code class="docutils literal notranslate"><span class="pre">sphinx-bootstrap-theme/</span></code>, run:</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span>$ pip install -e .
 </pre></div>
 </div>
+<p>This installs the Python package from the source contained in the cloned repo.</p>
 </div>
 </div>
 <div class="section" id="site-setup">

@@ -1,4 +1,5 @@
 import sphinx_bootstrap_theme
+from recommonmark.transform import AutoStructify
 
 # -- Curriculum Site Settings ------------------------------------------------
 
@@ -7,6 +8,7 @@ import sphinx_bootstrap_theme
 site_theme_options = {
     'navbar_title': 'Curriculum Docs',
     'navbar_site_name': "Pages",
+    'bootswatch_theme': "launchcode",
 }
 
 project = 'LaunchCode Curriculum Docs'
@@ -160,3 +162,7 @@ todo_include_todos = False
 
 def setup(app):
     app.add_stylesheet('css/launchcode.css')
+    app.add_config_value('recommonmark_config', {
+            'enable_eval_rst': True,
+            }, True)
+    app.add_transform(AutoStructify)

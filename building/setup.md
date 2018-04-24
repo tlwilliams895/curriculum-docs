@@ -20,6 +20,12 @@ $ python3 -V
 Python 3.6.5
 ```
 
+<aside class="aside-note">
+
+If you are using `python3`, you'll need to use `pip3` wherever `pip` is used in the sections below.
+
+</aside>
+
 If you don't have a sufficient Python install, we recommend installing [Miniconda](https://conda.io/miniconda.html).
 
 ## Sphinx Setup
@@ -44,13 +50,19 @@ $ pip install https://github.com/LaunchCodeEducation/sphinx-bootstrap-theme.git@
 
 ### Installing the theme for development
 
-> Only complete this step if you need to edit the site theme
+<aside class="aside-note">
 
-If you want to make changes to the theme, clone it's GitHub repo and install the local copy. From the repository directory `sphinx-bootstrap-theme/`, run:
+Only complete this step if you want to edit the theme for all sites. Otherwise, skip to the next section.
+
+</aside>
+
+If you want to make changes to the theme, clone its [GitHub repo](https://github.com/LaunchCodeEducation/sphinx-bootstrap-theme). From the repository directory `sphinx-bootstrap-theme/`, run:
 
 ```
 $ pip install -e .
 ```
+
+This installs the Python package from the source contained in the cloned repo.
 
 ## Site Setup
 

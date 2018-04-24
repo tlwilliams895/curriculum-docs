@@ -1,14 +1,27 @@
+##########################
 LaunchCode Curriculum Docs
-==========================
+##########################
 
-This repository is a template for LaunchCode curriculum module sites to be hosted via GitHub Pages, either under `@LaunchCodeEducation`_ or `@LaunchCoderGirl`_.
+Documentation on working with LaunchCode curriculum modules sites.
+
+Building the Sites
+==================
 
 .. toctree::
    :maxdepth: 2
 
-   pages/setup
-   pages/working
-   pages/style-guide
+   building/setup
+   building/working
+
+Guides
+======
+
+.. toctree::
+   :maxdepth: 2
+
+   guide/style
+   guide/aside-boxes
+
 
 .. _@LaunchCodeEducation: https://github.com/launchcodeeducation
 .. _@LaunchCoderGirl: https://github.com/LaunchCoderGirlSTL

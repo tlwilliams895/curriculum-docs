@@ -18,7 +18,7 @@
     <script type="text/javascript" src="_static/bootstrap-sphinx.js"></script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
-    <link rel="next" title="Setting Up A New Module Site" href="pages/setup.html" />
+    <link rel="next" title="Setting Up A New Module Site" href="building/setup.html" />
 <meta charset='utf-8'>
 <meta http-equiv='X-UA-Compatible' content='IE=edge,chrome=1'>
 <meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1'>
@@ -53,15 +53,28 @@
   <ul class="dropdown-menu globaltoc"
       role="menu"
       aria-labelledby="dLabelGlobalToc"><ul>
-<li class="toctree-l1"><a class="reference internal" href="pages/setup.html">Setting Up A New Module Site</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="pages/setup.html#prerequisites">Prerequisites</a></li>
-<li class="toctree-l2"><a class="reference internal" href="pages/setup.html#sphinx-setup">Sphinx Setup</a></li>
-<li class="toctree-l2"><a class="reference internal" href="pages/setup.html#configuration">Configuration</a></li>
-<li class="toctree-l2"><a class="reference internal" href="pages/setup.html#updating-the-theme">Updating The Theme</a></li>
+<li class="toctree-l1"><a class="reference internal" href="building/setup.html">Setting Up A New Module Site</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="building/setup.html#prerequisites">Prerequisites</a></li>
+<li class="toctree-l2"><a class="reference internal" href="building/setup.html#sphinx-setup">Sphinx Setup</a></li>
+<li class="toctree-l2"><a class="reference internal" href="building/setup.html#site-setup">Site Setup</a></li>
+<li class="toctree-l2"><a class="reference internal" href="building/setup.html#updating-the-theme-or-styles">Updating the Theme or Styles</a></li>
 </ul>
 </li>
-<li class="toctree-l1"><a class="reference internal" href="pages/working.html">Working With An Existing Module Site</a></li>
-<li class="toctree-l1"><a class="reference internal" href="pages/style-guide.html">Style Guide</a></li>
+<li class="toctree-l1"><a class="reference internal" href="building/working.html">Working With An Existing Module Site</a></li>
+</ul>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="guide/style.html">Style Guide</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="guide/style.html#headings">Headings</a></li>
+<li class="toctree-l2"><a class="reference internal" href="guide/style.html#inline-code-formatting">Inline Code Formatting</a></li>
+<li class="toctree-l2"><a class="reference internal" href="guide/style.html#application-and-ui-labels">Application and UI Labels</a></li>
+<li class="toctree-l2"><a class="reference internal" href="guide/style.html#code-segments">Code Segments</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="guide/aside-boxes.html">Aside Boxes</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="guide/aside-boxes.html#box-types">Box Types</a></li>
+<li class="toctree-l2"><a class="reference internal" href="guide/aside-boxes.html#code-editor-snippets">Code Editor Snippets</a></li>
+</ul>
+</li>
 </ul>
 </ul>
 </li>
@@ -93,19 +106,40 @@
       
   <div class="section" id="launchcode-curriculum-docs">
 <h1>LaunchCode Curriculum Docs<a class="headerlink" href="#launchcode-curriculum-docs" title="Permalink to this headline">¶</a></h1>
-<p>This repository is a template for LaunchCode curriculum module sites to be hosted via GitHub Pages, either under <a class="reference external" href="https://github.com/launchcodeeducation">&#64;LaunchCodeEducation</a> or <a class="reference external" href="https://github.com/LaunchCoderGirlSTL">&#64;LaunchCoderGirl</a>.</p>
+<p>Documentation on working with LaunchCode curriculum modules sites.</p>
+<div class="section" id="building-the-sites">
+<h2>Building the Sites<a class="headerlink" href="#building-the-sites" title="Permalink to this headline">¶</a></h2>
 <div class="toctree-wrapper compound">
 <ul>
-<li class="toctree-l1"><a class="reference internal" href="pages/setup.html">Setting Up A New Module Site</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="pages/setup.html#prerequisites">Prerequisites</a></li>
-<li class="toctree-l2"><a class="reference internal" href="pages/setup.html#sphinx-setup">Sphinx Setup</a></li>
-<li class="toctree-l2"><a class="reference internal" href="pages/setup.html#configuration">Configuration</a></li>
-<li class="toctree-l2"><a class="reference internal" href="pages/setup.html#updating-the-theme">Updating The Theme</a></li>
+<li class="toctree-l1"><a class="reference internal" href="building/setup.html">Setting Up A New Module Site</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="building/setup.html#prerequisites">Prerequisites</a></li>
+<li class="toctree-l2"><a class="reference internal" href="building/setup.html#sphinx-setup">Sphinx Setup</a></li>
+<li class="toctree-l2"><a class="reference internal" href="building/setup.html#site-setup">Site Setup</a></li>
+<li class="toctree-l2"><a class="reference internal" href="building/setup.html#updating-the-theme-or-styles">Updating the Theme or Styles</a></li>
 </ul>
 </li>
-<li class="toctree-l1"><a class="reference internal" href="pages/working.html">Working With An Existing Module Site</a></li>
-<li class="toctree-l1"><a class="reference internal" href="pages/style-guide.html">Style Guide</a></li>
+<li class="toctree-l1"><a class="reference internal" href="building/working.html">Working With An Existing Module Site</a></li>
 </ul>
+</div>
+</div>
+<div class="section" id="guides">
+<h2>Guides<a class="headerlink" href="#guides" title="Permalink to this headline">¶</a></h2>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="guide/style.html">Style Guide</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="guide/style.html#headings">Headings</a></li>
+<li class="toctree-l2"><a class="reference internal" href="guide/style.html#inline-code-formatting">Inline Code Formatting</a></li>
+<li class="toctree-l2"><a class="reference internal" href="guide/style.html#application-and-ui-labels">Application and UI Labels</a></li>
+<li class="toctree-l2"><a class="reference internal" href="guide/style.html#code-segments">Code Segments</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="guide/aside-boxes.html">Aside Boxes</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="guide/aside-boxes.html#box-types">Box Types</a></li>
+<li class="toctree-l2"><a class="reference internal" href="guide/aside-boxes.html#code-editor-snippets">Code Editor Snippets</a></li>
+</ul>
+</li>
+</ul>
+</div>
 </div>
 </div>
 
