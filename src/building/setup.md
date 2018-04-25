@@ -138,7 +138,7 @@ After a couple of minutes, you should be able to access the live site via its Gi
 
 ### Site-specific settings
 
-At the top of `conf.py`, add your site-spefic settings. Be sure to at least configure:
+At the top of `conf.py`, add your site-specific settings. Be sure to at least configure:
 - Variables in `site_theme_options`:
     - `navbar_title`: The site name that will appear in the navbar.
     - `navbar_site_name`: The title of the dropdown in the navbar that lists top-level site pages.

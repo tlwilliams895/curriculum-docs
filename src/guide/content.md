@@ -8,7 +8,7 @@
 
 ## Aside Boxes
 
-This page shows how to use the `<aside>` tag within your markdown to generate little labeled boxes for your Couscous site. There are 4 built-in options, plus a "custom" option:
+This page shows how to use the `<aside>` tag within your markdown to generate little labeled boxes for your Sphinx site. There are 5 built-in options, plus a "custom" option:
 
 ```eval_rst
 ==================  =================
@@ -173,7 +173,7 @@ $2
 </aside>
 ```
 
-Your cursor will be placed at the `$1` position, to easily complete teh class with `note`, `warning`, etc. Hitting Tab again will place your cursor at the `$2` position to add content.
+Your cursor will be placed at the `$1` position, to easily complete the class with `note`, `warning`, etc. Hitting Tab again will place your cursor at the `$2` position to add content.
 
 #### Visual Studio Code
 
@@ -191,7 +191,7 @@ In VS Code, navigate to *Code > Preferences > User Snippets* and search for `mar
 
 #### Atom
 
-In Atom, navigat to *Atom > Snippets...* and add the following code to the bottom of the file.
+In Atom, navigate to *Atom > Snippets...* and add the following code to the bottom of the file.
 
 ```
 '.text.md':

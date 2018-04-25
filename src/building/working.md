@@ -1,6 +1,6 @@
 # Working With An Existing Module Site
 
-To edit and publish content on an existing curriculum site, make sure you have teh necessary prerequisites and have set up Sphinx, as detailed in [Setting Up A New Module Site](setup.html).
+To edit and publish content on an existing curriculum site, make sure you have the necessary prerequisites and have set up Sphinx, as detailed in [Setting Up A New Module Site](setup.html).
 
 ## Building the Site
 
