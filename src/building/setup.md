@@ -45,7 +45,7 @@ $ pip install recommonmark
 Install the LaunchCode fork of the `sphinx-bootstrap-theme` Sphinx theme.
 
 ```
-$ pip install https://github.com/LaunchCodeEducation/sphinx-bootstrap-theme.git@master
+$ pip install git+https://github.com/LaunchCodeEducation/sphinx-bootstrap-theme.git@master
 ```
 
 ### Installing the theme for development
