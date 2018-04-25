@@ -5,7 +5,7 @@ This is a work-in-progress guide to writing and formatting content for LaunchCod
 We identify three levels of current implementation for each category:
 
 - *Strict*: Follow these guidelines at all times. If you find a violation of the guideline, fix it. Strict guidelines are generally widely-implemented.
-- *Moderate*: Implemntation is more flexible -- more readily allowing for exceptions based on context -- and is generally less complete.
+- *Moderate*: Implementation is more flexible -- more readily allowing for exceptions based on context -- and is generally less complete.
 - *Aspirational*: Guidelines we aspire to implement more regularly. These are generally less impactful to the student, but are good for standardizing and maintaining a high level of quality.
 
 This guide assumes that you are working with Markdown files. For the corresponding reST syntax, refer to the [reStructuredText Primer](http://www.sphinx-doc.org/en/stable/rest.html).
@@ -50,7 +50,7 @@ public static int counter;
 
 <aside class="aside-note">
 
-We prefer backtics over tildes, however tildes should be used when it is necessary to include triple-backtics within the block itself.
+We prefer backtics over tildes; however, tildes should be used when it is necessary to include triple-backtics within the block itself.
 
 </aside>
 
@@ -74,7 +74,7 @@ For short segments, or individual code words, enclose in single backtics:
 The `static` keyword in Java is used to...
 ~~~
 
-You should always encolse the following types of types of items in single backtics:
+You should always enclose the following types of types of items in single backtics:
 
 - Programming language keywords, symbols, and identifiers
 - File and directory names
