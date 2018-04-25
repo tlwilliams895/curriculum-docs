@@ -1,4 +1,12 @@
-# Aside Boxes
+# Content
+
+## Tables
+
+<!--table-->
+
+<!--endtable-->
+
+## Aside Boxes
 
 This page shows how to use the `<aside>` tag within your markdown to generate little labeled boxes for your Couscous site. There are 4 built-in options, plus a "custom" option:
 
@@ -15,9 +23,9 @@ CSS Class           Resulting Label
 ==================  =================
 ```
 
-## Box Types
+### Box Types
 
-### Note
+#### Note
 
 Use `aside-note` when you want to acknowledge or call attention to something, but you don't want to break up the flow of your main thought(s). Finish the main flow of thought first, and then insert the note afterwards.
 
@@ -39,11 +47,11 @@ If the image above fails to load, then [click here to see Daisy's mock-up](#).
 
 <aside class="aside-note">
 
-Note the blank lines separating the opening and closing `<aside>` tags from the content. These are necessary in order for the contents of the aside to be parsed as Markdown.
+Notice the blank lines separating the opening and closing `<aside>` tags from the content. These are necessary in order for the contents of the aside to be parsed as Markdown.
 
 </aside>
 
-### Warning
+#### Warning
 
 Use `aside-warning` similarly to `aside-note`, but especially in situations where you want to prevent the reader from running into some trouble.
 
@@ -67,7 +75,7 @@ Even if there isn't any explicit Markdown within the aside, the contents will pa
 </aside>
 ```
 
-### Hint
+#### Hint
 
 Use `aside-hint` to give a hint about how the student might approach a problem.
 
@@ -87,7 +95,7 @@ You will probably need to build up the string as you go, using the [accumulator 
 </aside>
 ```
 
-### Pro tip
+#### Pro tip
 
 Use `aside-pro-tip` to introduce concepts, skills, or cute tricks that are nice-to-have, but not fully necessary, and can be safely ignored without compromising the student's core understanding.
 
@@ -107,7 +115,7 @@ You can write that in one line using the *ternary* operator. Learn more [here](#
 </aside>
 ```
 
-### Example
+#### Example
 
 Use `aside-example` to give examples of concepts under discussion.
 
@@ -133,7 +141,7 @@ var value = inputVal != null ? inputVal : defaultVal;
 </aside>
 ~~~
 
-### Custom
+#### Custom
 
 If there is some specific label you need, then you can use the `aside-custom` class and set the `label` attribute accordingly.
 
@@ -151,7 +159,7 @@ Party at Chris's place on Saturday. There will be tacos!
 </aside>
 ```
 
-## Code Editor Snippets
+### Code Editor Snippets
 
 It's very handy to set up a snippet in your code editor to allow for quick creation of aside boxes.
 
@@ -167,7 +175,7 @@ $2
 
 Your cursor will be placed at the `$1` position, to easily complete teh class with `note`, `warning`, etc. Hitting Tab again will place your cursor at the `$2` position to add content.
 
-### Visual Studio Code
+#### Visual Studio Code
 
 In VS Code, navigate to *Code > Preferences > User Snippets* and search for `markdown.json` in the search box that pops up. Add the code below between the outer `{}` to create the snippet.
 
@@ -181,7 +189,7 @@ In VS Code, navigate to *Code > Preferences > User Snippets* and search for `mar
 }
 ```
 
-### Atom
+#### Atom
 
 In Atom, navigat to *Atom > Snippets...* and add the following code to the bottom of the file.
 

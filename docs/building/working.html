@@ -61,19 +61,24 @@
 <li class="toctree-l2"><a class="reference internal" href="setup.html#updating-the-theme-or-styles">Updating the Theme or Styles</a></li>
 </ul>
 </li>
-<li class="toctree-l1 current"><a class="current reference internal" href="#">Working With An Existing Module Site</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Working With An Existing Module Site</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#building-the-site">Building the Site</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#viewing-the-site-locally">Viewing the Site Locally</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#editing-documents">Editing Documents</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#deploying">Deploying</a></li>
+</ul>
+</li>
 </ul>
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="../guide/style.html">Style Guide</a><ul>
 <li class="toctree-l2"><a class="reference internal" href="../guide/style.html#headings">Headings</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../guide/style.html#inline-code-formatting">Inline Code Formatting</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../guide/style.html#application-and-ui-labels">Application and UI Labels</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../guide/style.html#code-segments">Code Segments</a></li>
 </ul>
 </li>
-<li class="toctree-l1"><a class="reference internal" href="../guide/aside-boxes.html">Aside Boxes</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="../guide/aside-boxes.html#box-types">Box Types</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../guide/aside-boxes.html#code-editor-snippets">Code Editor Snippets</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../guide/content.html">Content</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../guide/content.html#tables">Tables</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../guide/content.html#aside-boxes">Aside Boxes</a></li>
 </ul>
 </li>
 </ul>
@@ -107,20 +112,80 @@
       
   <div class="section" id="working-with-an-existing-module-site">
 <span id="working-with-an-existing-module-site"></span><h1>Working With An Existing Module Site<a class="headerlink" href="#working-with-an-existing-module-site" title="Permalink to this headline">¶</a></h1>
+<p>To edit and publish content on an existing curriculum site, make sure you have teh necessary prerequisites and have set up Sphinx, as detailed in <a class="reference external" href="building/setup.html">Setting Up A New Module Site</a>.</p>
+<div class="section" id="building-the-site">
+<span id="building-the-site"></span><h2>Building the Site<a class="headerlink" href="#building-the-site" title="Permalink to this headline">¶</a></h2>
+<p>Clone the repository and, from the project directory, verify that you can build the site.</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>$ ./build.sh
+Running Sphinx v1.7.2
+loading pickled environment... not yet created
+building [mo]: all of 0 po files
+building [html]: all source files
+updating environment: 1 added, 0 changed, 0 removed
+reading sources... [100%] index                                                                     
+looking for now-outdated files... none found
+pickling environment... done
+checking consistency... done
+preparing documents... done
+writing output... [100%] index                                                                      
+generating indices... genindex
+writing additional pages... search
+copying static files... done
+copying extra files... done
+dumping search index in English (code: en) ... done
+dumping object inventory... done
+build succeeded.
+
+The HTML pages are in docs.
+</pre></div>
+</div>
+<p>If the build script fails due to a permissions error, enable its executable bit:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>$ chmod +x build.sh
+</pre></div>
+</div>
+<p>The build script builds HTML files from the source Markdown and reStructuredText files, using a template. It places the built files in the <code class="docutils literal notranslate"><span class="pre">/docs</span></code> folder so they can be hosted via GitHub Pages.</p>
+</div>
+<div class="section" id="viewing-the-site-locally">
+<span id="viewing-the-site-locally"></span><h2>Viewing the Site Locally<a class="headerlink" href="#viewing-the-site-locally" title="Permalink to this headline">¶</a></h2>
+<p>When updating a site, you should build and proof your changs locally before committing them. To do this, we’ll use Python’s <code class="docutils literal notranslate"><span class="pre">http.server</span></code> module.</p>
+<div class="section" id="macos-and-linux">
+<span id="macos-and-linux"></span><h3>macOS and Linux<a class="headerlink" href="#macos-and-linux" title="Permalink to this headline">¶</a></h3>
+<p>Add the following line to your <code class="docutils literal notranslate"><span class="pre">~/.bash_profile</span></code> (macOS) or <code class="docutils literal notranslate"><span class="pre">~/.bashrc</span></code> (Linux):</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">alias</span> <span class="n">serve</span><span class="o">=</span><span class="s1">&#39;python -m http.server&#39;</span>
+</pre></div>
+</div>
+<p>Open a second terminal window and navigate to the project’s <code class="docutils literal notranslate"><span class="pre">/docs</span></code> folder. Then run:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>$ serve
+Serving HTTP on 0.0.0.0 port 8000 (http://0.0.0.0:8000/) ...
+</pre></div>
+</div>
+<p>You can now view the site at <code class="docutils literal notranslate"><span class="pre">localhost:8000</span></code>. You can rebuild the site in another window while the server is still running, and changes will be immediately reflected.</p>
+</div>
+<div class="section" id="windows">
+<span id="windows"></span><h3>Windows<a class="headerlink" href="#windows" title="Permalink to this headline">¶</a></h3>
+<p>TODO</p>
+</div>
+</div>
+<div class="section" id="editing-documents">
+<span id="editing-documents"></span><h2>Editing Documents<a class="headerlink" href="#editing-documents" title="Permalink to this headline">¶</a></h2>
 <ul class="simple">
-<li>setup</li>
-<li>clone</li>
-<li>using “serve”</li>
 <li>Markdown reference: http://commonmark.org/</li>
 <li>RST</li>
 <li>style guide</li>
-<li>building</li>
+<li>tables</li>
+<li>images</li>
+</ul>
+</div>
+<div class="section" id="deploying">
+<span id="deploying"></span><h2>Deploying<a class="headerlink" href="#deploying" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
 <li>deploying<ul>
 <li>staff</li>
 <li>non-staff (via PR)</li>
 </ul>
 </li>
 </ul>
+</div>
 </div>
 
 

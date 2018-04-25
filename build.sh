@@ -1,2 +1,5 @@
 #! /bin/sh
-sphinx-build -a -b html . docs
+echo "Converting MD tables to RST"
+python tools/prebuild.py
+sphinx-build -a -b html src docs
+python tools/postbuild.py

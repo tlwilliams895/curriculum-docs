@@ -4,7 +4,7 @@
   <head>
     <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-    <title>Aside Boxes &#8212; LaunchCode Curriculum Docs  documentation</title>
+    <title>Content &#8212; LaunchCode Curriculum Docs  documentation</title>
     <link rel="stylesheet" href="../_static/bootstrap-sphinx.css" type="text/css" />
     <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
     <link rel="stylesheet" href="../_static/css/launchcode.css" type="text/css" />
@@ -18,7 +18,6 @@
     <script type="text/javascript" src="../_static/bootstrap-sphinx.js"></script>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
-    <link rel="next" title="Content" href="content.html" />
     <link rel="prev" title="Style Guide" href="style.html" />
 <meta charset='utf-8'>
 <meta http-equiv='X-UA-Compatible' content='IE=edge,chrome=1'>
@@ -76,13 +75,9 @@
 <li class="toctree-l2"><a class="reference internal" href="style.html#code-segments">Code Segments</a></li>
 </ul>
 </li>
-<li class="toctree-l1 current"><a class="current reference internal" href="#">Aside Boxes</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="#box-types">Box Types</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#code-editor-snippets">Code Editor Snippets</a></li>
-</ul>
-</li>
-<li class="toctree-l1"><a class="reference internal" href="content.html">Content</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="content.html#tables">Tables</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Content</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#tables">Tables</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#aside-boxes">Aside Boxes</a></li>
 </ul>
 </li>
 </ul>
@@ -114,8 +109,13 @@
   <div class="row">
     <div class="col-md-12 content">
       
-  <div class="section" id="aside-boxes">
-<span id="aside-boxes"></span><h1>Aside Boxes<a class="headerlink" href="#aside-boxes" title="Permalink to this headline">¶</a></h1>
+  <div class="section" id="content">
+<span id="content"></span><h1>Content<a class="headerlink" href="#content" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="tables">
+<span id="tables"></span><h2>Tables<a class="headerlink" href="#tables" title="Permalink to this headline">¶</a></h2>
+</div>
+<div class="section" id="aside-boxes">
+<span id="aside-boxes"></span><h2>Aside Boxes<a class="headerlink" href="#aside-boxes" title="Permalink to this headline">¶</a></h2>
 <p>This page shows how to use the <code class="docutils literal notranslate"><span class="pre">&lt;aside&gt;</span></code> tag within your markdown to generate little labeled boxes for your Couscous site. There are 4 built-in options, plus a “custom” option:</p>
 <table border="1" class="docutils">
 <colgroup>
@@ -149,9 +149,9 @@
 </tbody>
 </table>
 <div class="section" id="box-types">
-<span id="box-types"></span><h2>Box Types<a class="headerlink" href="#box-types" title="Permalink to this headline">¶</a></h2>
+<span id="box-types"></span><h3>Box Types<a class="headerlink" href="#box-types" title="Permalink to this headline">¶</a></h3>
 <div class="section" id="note">
-<span id="note"></span><h3>Note<a class="headerlink" href="#note" title="Permalink to this headline">¶</a></h3>
+<span id="note"></span><h4>Note<a class="headerlink" href="#note" title="Permalink to this headline">¶</a></h4>
 <p>Use <code class="docutils literal notranslate"><span class="pre">aside-note</span></code> when you want to acknowledge or call attention to something, but you don’t want to break up the flow of your main thought(s). Finish the main flow of thought first, and then insert the note afterwards.</p>
 <aside class="aside-note"><p>If the image above fails to load, then <a class="reference external" href="#">click here to see Daisy’s mock-up</a>.</p>
 </aside><p>Markdown source:</p>
@@ -162,10 +162,10 @@ If the image above fails to load, then [click here to see Daisy&#39;s mock-up](#
 <span class="p">&lt;/</span><span class="nt">aside</span><span class="p">&gt;</span>
 </pre></div>
 </div>
-<aside class="aside-note"><p>Note the blank lines separating the opening and closing <code class="docutils literal notranslate"><span class="pre">&lt;aside&gt;</span></code> tags from the content. These are necessary in order for the contents of the aside to be parsed as Markdown.</p>
+<aside class="aside-note"><p>Notice the blank lines separating the opening and closing <code class="docutils literal notranslate"><span class="pre">&lt;aside&gt;</span></code> tags from the content. These are necessary in order for the contents of the aside to be parsed as Markdown.</p>
 </aside></div>
 <div class="section" id="warning">
-<span id="warning"></span><h3>Warning<a class="headerlink" href="#warning" title="Permalink to this headline">¶</a></h3>
+<span id="warning"></span><h4>Warning<a class="headerlink" href="#warning" title="Permalink to this headline">¶</a></h4>
 <p>Use <code class="docutils literal notranslate"><span class="pre">aside-warning</span></code> similarly to <code class="docutils literal notranslate"><span class="pre">aside-note</span></code>, but especially in situations where you want to prevent the reader from running into some trouble.</p>
 <aside class="aside-warning"><p>If you don’t include an empty line between the HTML tags and the contents, you’ll have undesirable results.</p>
 <p>Even if there isn’t any explicit Markdown within the aside, the contents will parsed differently and may result in not-so-great styling.</p>
@@ -181,7 +181,7 @@ Even if there isn&#39;t any explicit Markdown within the aside, the contents wil
 </div>
 </div>
 <div class="section" id="hint">
-<span id="hint"></span><h3>Hint<a class="headerlink" href="#hint" title="Permalink to this headline">¶</a></h3>
+<span id="hint"></span><h4>Hint<a class="headerlink" href="#hint" title="Permalink to this headline">¶</a></h4>
 <p>Use <code class="docutils literal notranslate"><span class="pre">aside-hint</span></code> to give a hint about how the student might approach a problem.</p>
 <aside class="aside-hint"><p>You will probably need to build up the string as you go, using the <a class="reference external" href="#">accumulator pattern</a>.</p>
 </aside><p>Markdown source:</p>
@@ -194,7 +194,7 @@ You will probably need to build up the string as you go, using the [accumulator 
 </div>
 </div>
 <div class="section" id="pro-tip">
-<span id="pro-tip"></span><h3>Pro tip<a class="headerlink" href="#pro-tip" title="Permalink to this headline">¶</a></h3>
+<span id="pro-tip"></span><h4>Pro tip<a class="headerlink" href="#pro-tip" title="Permalink to this headline">¶</a></h4>
 <p>Use <code class="docutils literal notranslate"><span class="pre">aside-pro-tip</span></code> to introduce concepts, skills, or cute tricks that are nice-to-have, but not fully necessary, and can be safely ignored without compromising the student’s core understanding.</p>
 <aside class="aside-pro-tip"><p>You can write that in one line using the <em>ternary</em> operator. Learn more <a class="reference external" href="#">here</a>.</p>
 </aside><p>Markdown source:</p>
@@ -207,7 +207,7 @@ You can write that in one line using the *ternary* operator. Learn more [here](#
 </div>
 </div>
 <div class="section" id="example">
-<span id="example"></span><h3>Example<a class="headerlink" href="#example" title="Permalink to this headline">¶</a></h3>
+<span id="example"></span><h4>Example<a class="headerlink" href="#example" title="Permalink to this headline">¶</a></h4>
 <p>Use <code class="docutils literal notranslate"><span class="pre">aside-example</span></code> to give examples of concepts under discussion.</p>
 <aside class="aside-example"><p>The ternary operator in Javascript</p>
 <div class="highlight-js notranslate"><div class="highlight"><pre><span></span><span class="kd">var</span> <span class="nx">value</span> <span class="o">=</span> <span class="nx">inputVal</span> <span class="o">!=</span> <span class="kc">null</span> <span class="o">?</span> <span class="nx">inputVal</span> <span class="o">:</span> <span class="nx">defaultVal</span><span class="p">;</span>
@@ -226,7 +226,7 @@ var value = inputVal != null ? inputVal : defaultVal;
 </div>
 </div>
 <div class="section" id="custom">
-<span id="custom"></span><h3>Custom<a class="headerlink" href="#custom" title="Permalink to this headline">¶</a></h3>
+<span id="custom"></span><h4>Custom<a class="headerlink" href="#custom" title="Permalink to this headline">¶</a></h4>
 <p>If there is some specific label you need, then you can use the <code class="docutils literal notranslate"><span class="pre">aside-custom</span></code> class and set the <code class="docutils literal notranslate"><span class="pre">label</span></code> attribute accordingly.</p>
 <aside class="aside-custom" label="🌮 Tacos"><p>Party at Chris’s place on Saturday. There will be tacos!</p>
 </aside><div class="highlight-html notranslate"><div class="highlight"><pre><span></span><span class="p">&lt;</span><span class="nt">aside</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;aside-custom&quot;</span> <span class="na">label</span><span class="o">=</span><span class="s">&quot;🌮 Tacos&quot;</span><span class="p">&gt;</span>
@@ -239,7 +239,7 @@ Party at Chris&#39;s place on Saturday. There will be tacos!
 </div>
 </div>
 <div class="section" id="code-editor-snippets">
-<span id="code-editor-snippets"></span><h2>Code Editor Snippets<a class="headerlink" href="#code-editor-snippets" title="Permalink to this headline">¶</a></h2>
+<span id="code-editor-snippets"></span><h3>Code Editor Snippets<a class="headerlink" href="#code-editor-snippets" title="Permalink to this headline">¶</a></h3>
 <p>It’s very handy to set up a snippet in your code editor to allow for quick creation of aside boxes.</p>
 <p>Both of the snippets below allow you to type “aside” followed by the Tab key to generate the following HTML, with <code class="docutils literal notranslate"><span class="pre">$n</span></code> as functional placeholders:</p>
 <div class="highlight-html notranslate"><div class="highlight"><pre><span></span><span class="p">&lt;</span><span class="nt">aside</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;aside-$1&quot;</span><span class="p">&gt;</span>
@@ -251,7 +251,7 @@ $2
 </div>
 <p>Your cursor will be placed at the <code class="docutils literal notranslate"><span class="pre">$1</span></code> position, to easily complete teh class with <code class="docutils literal notranslate"><span class="pre">note</span></code>, <code class="docutils literal notranslate"><span class="pre">warning</span></code>, etc. Hitting Tab again will place your cursor at the <code class="docutils literal notranslate"><span class="pre">$2</span></code> position to add content.</p>
 <div class="section" id="visual-studio-code">
-<span id="visual-studio-code"></span><h3>Visual Studio Code<a class="headerlink" href="#visual-studio-code" title="Permalink to this headline">¶</a></h3>
+<span id="visual-studio-code"></span><h4>Visual Studio Code<a class="headerlink" href="#visual-studio-code" title="Permalink to this headline">¶</a></h4>
 <p>In VS Code, navigate to <em>Code &gt; Preferences &gt; User Snippets</em> and search for <code class="docutils literal notranslate"><span class="pre">markdown.json</span></code> in the search box that pops up. Add the code below between the outer <code class="docutils literal notranslate"><span class="pre">{}</span></code> to create the snippet.</p>
 <div class="highlight-js notranslate"><div class="highlight"><pre><span></span><span class="s2">&quot;Create aside&quot;</span><span class="o">:</span> <span class="p">{</span>
     <span class="s2">&quot;prefix&quot;</span><span class="o">:</span> <span class="s2">&quot;aside&quot;</span><span class="p">,</span>
@@ -264,13 +264,14 @@ $2
 </div>
 </div>
 <div class="section" id="atom">
-<span id="atom"></span><h3>Atom<a class="headerlink" href="#atom" title="Permalink to this headline">¶</a></h3>
+<span id="atom"></span><h4>Atom<a class="headerlink" href="#atom" title="Permalink to this headline">¶</a></h4>
 <p>In Atom, navigat to <em>Atom &gt; Snippets…</em> and add the following code to the bottom of the file.</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="s1">&#39;.text.md&#39;</span><span class="p">:</span>
   <span class="s1">&#39;Couscous Aside&#39;</span><span class="p">:</span>
     <span class="s1">&#39;prefix&#39;</span><span class="p">:</span> <span class="s1">&#39;aside&#39;</span>
     <span class="s1">&#39;body&#39;</span><span class="p">:</span> <span class="s1">&#39;&lt;aside class=&quot;aside-$1&quot;&gt;</span><span class="se">\n\n</span><span class="s1">$2</span><span class="se">\n\n</span><span class="s1">&lt;/aside&gt;&#39;</span>
 </pre></div>
+</div>
 </div>
 </div>
 </div>

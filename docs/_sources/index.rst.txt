@@ -20,7 +20,7 @@ Guides
    :maxdepth: 2
 
    guide/style
-   guide/aside-boxes
+   guide/content
 
 
 .. _@LaunchCodeEducation: https://github.com/launchcodeeducation

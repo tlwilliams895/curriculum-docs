@@ -22,21 +22,6 @@ Level: *Strict*
 
 **Code snippets**: Any words or characters that would otherwise be formatted using inline code formatting (e.g. backtics in markdown) should *not* have such formatting applied when part of a heading. Furthermore, the case of such words or characters should not be modified to match the capitalization rules above; they should remain the same case that they would be when used.
 
-## Inline Code Formatting
-
-Level: *Strict*
-
-The following types of items should have inline code formatting applied (e.g. backtics in markdown, or `<code>` elements in HTML):
-
-- Any literal piece of code, including all identifiers and operators
-- File and directory names
-
-<aside class="aside-note">
-
-One exception to this rule is when any of these elements appears in a heading. See the [Headings](#headings) section for details.
-
-</aside>
-
 ## Application and UI Labels
 
 Level: *Moderate*
@@ -93,10 +78,16 @@ You should always encolse the following types of types of items in single backti
 
 - Programming language keywords, symbols, and identifiers
 - File and directory names
-- URLs
+- URLs referenced literally (i.e. not linked)
 
 For inline code that contains a backtic, use double backtics:
 
 ~~~md
 There is a literal backtic here: ``(`)``
 ~~~
+
+<aside class="aside-note">
+
+One exception to this rule is when any of these elements appears in a heading. See the [Headings](#headings) section for details.
+
+</aside>
