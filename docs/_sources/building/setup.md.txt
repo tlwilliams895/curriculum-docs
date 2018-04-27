@@ -165,7 +165,7 @@ Then build the site, commit, and push.
 To update the site's template, update your local install of `sphinx-bootstrap-template`:
 
 ```
-$ pip install https://github.com/LaunchCodeEducation/sphinx-bootstrap-theme.git@master
+$ pip install git+https://github.com/LaunchCodeEducation/sphinx-bootstrap-theme.git@master
 ```
 
 Then build the site, commit, and push.
