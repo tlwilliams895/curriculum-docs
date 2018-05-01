@@ -161,13 +161,24 @@ Python 3.6.5
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span>$ git clone git@github.com:LaunchCodeEducation/curriculum-module-template.git SITE_NAME
 </pre></div>
 </div>
+<p>Alternatively, if you don’t have an SSH key, use HTTP:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>$ git clone http://github.com/LaunchCodeEducation/curriculum-module-template SITE_NAME
+</pre></div>
+</div>
 <p>Make the module template repository the new site’s <code class="docutils literal notranslate"><span class="pre">upstream</span></code> remote, for ease of updating:</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span>$ git remote rm origin
 $ git remote add upstream git@github.com:LaunchCodeEducation/curriculum-module-template.git
 </pre></div>
 </div>
+<p>Or, with HTTP:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>$ git remote rm origin
+$ git remote add upstream http://github.com/LaunchCodeEducation/curriculum-module-template
+</pre></div>
+</div>
 <p>Create a new <em>empty</em> repository on GitHub, under <a class="reference external" href="https://github.com/LaunchCodeEducation">&#64;LaunchCodeEducation</a> or <a class="reference external" href="https://github.com/LaunchCoderGirlSTL">&#64;LaunchCoderGirl</a>, as appropriate. Add the new repo as a remote to your local repository, and push:</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span>$ git remote add origin NEW_REPO_URL
+$ git add .
+$ git commit -m &quot;First commit&quot;
 $ git push origin master
 </pre></div>
 </div>

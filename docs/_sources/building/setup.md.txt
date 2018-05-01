@@ -72,6 +72,12 @@ Clone the site template into a new directory:
 $ git clone git@github.com:LaunchCodeEducation/curriculum-module-template.git SITE_NAME
 ```
 
+Alternatively, if you don't have an SSH key, use HTTP:
+
+```
+$ git clone http://github.com/LaunchCodeEducation/curriculum-module-template SITE_NAME
+```
+
 Make the module template repository the new site's `upstream` remote, for ease of updating:
 
 ```
@@ -79,10 +85,19 @@ $ git remote rm origin
 $ git remote add upstream git@github.com:LaunchCodeEducation/curriculum-module-template.git
 ```
 
+Or, with HTTP:
+
+```
+$ git remote rm origin
+$ git remote add upstream http://github.com/LaunchCodeEducation/curriculum-module-template
+```
+
 Create a new _empty_ repository on GitHub, under [@LaunchCodeEducation](https://github.com/LaunchCodeEducation) or [@LaunchCoderGirl](https://github.com/LaunchCoderGirlSTL), as appropriate. Add the new repo as a remote to your local repository, and push:
 
 ```
 $ git remote add origin NEW_REPO_URL
+$ git add .
+$ git commit -m "First commit"
 $ git push origin master
 ```
 
