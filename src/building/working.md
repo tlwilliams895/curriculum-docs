@@ -40,7 +40,7 @@ The build script builds HTML files from the source Markdown and reStructuredText
 
 ## Viewing the Site Locally
 
-When updating a site, you should build and proof your changs locally before committing them. To do this, we'll use Python's `http.server` module.
+When updating a site, you should build and proof your changes locally before committing them. To do this, we'll use Python's `http.server` module.
 
 ### macOS and Linux
 
