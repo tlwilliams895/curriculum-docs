@@ -96,8 +96,6 @@ Create a new _empty_ repository on GitHub, under [@LaunchCodeEducation](https://
 
 ```
 $ git remote add origin NEW_REPO_URL
-$ git add .
-$ git commit -m "First commit"
 $ git push origin master
 ```
 
