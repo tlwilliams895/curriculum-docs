@@ -2,9 +2,10 @@
 
 ## Tables
 
-<!--table-->
+```eval_rst
 
-<!--endtable-->
+
+```
 
 ## Aside Boxes
 
