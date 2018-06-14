@@ -2,7 +2,7 @@
 LaunchCode Curriculum Docs
 ##########################
 
-Documentation on working with LaunchCode curriculum modules sites.
+LaunchCode Education documentation
 
 Building the Sites
 ==================
@@ -13,8 +13,8 @@ Building the Sites
    building/setup
    building/working
 
-Guides
-======
+Style and Formatting
+====================
 
 .. toctree::
    :maxdepth: 2
@@ -22,6 +22,11 @@ Guides
    guide/style
    guide/content
 
+Creating Curriculum
+===================
 
-.. _@LaunchCodeEducation: https://github.com/launchcodeeducation
-.. _@LaunchCoderGirl: https://github.com/LaunchCoderGirlSTL
+.. toctree::
+   :maxdepth: 2
+
+   curriculum/creating
+   curriculum/making-videos

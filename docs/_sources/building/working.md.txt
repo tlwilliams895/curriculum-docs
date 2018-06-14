@@ -66,10 +66,12 @@ TODO
 ## Editing Documents
 
 - Markdown reference: http://commonmark.org/
-- RST
+- RST: 
+    - Sections: http://www.sphinx-doc.org/en/master/usage/restructuredtext/basics.html#sections
 - style guide
 - tables
 - images
+- avoid smart quotes
 
 ## Deploying
 

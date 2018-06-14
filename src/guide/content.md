@@ -1,11 +1,5 @@
 # Content
 
-## Tables
-
-<!--table-->
-
-<!--endtable-->
-
 ## Aside Boxes
 
 This page shows how to use the `<aside>` tag within your markdown to generate little labeled boxes for your Sphinx site. There are 5 built-in options, plus a "custom" option:
