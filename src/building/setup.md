@@ -133,6 +133,14 @@ If the build script fails due to a permissions error, enable its executable bit:
 $ chmod +x build.sh
 ```
 
+Before you can commit, remove the following line from `.gitignore`:
+
+```
+docs/*
+```
+
+At this point, it is very important to make sure you followed the directions above to point your `origin` remote at the right location.
+
 After the build successfully completes, add and commit the built site. You'll have several new files and directories in this commit, since it will be the first (and only) time many of the site's static files are moved into the `/docs`, from which they'll be served.
 
 ```

@@ -122,7 +122,56 @@
 
 <div class="container">
   <div class="row">
-    <div class="col-md-12 content">
+      <div class="col-md-3">
+        <div id="sidebar" class="bs-sidenav" role="complementary"><p class="topic-title">Page Contents</p>
+
+<ul>
+<li><a class="reference internal" href="#">Setting Up A New Module Site</a><ul>
+<li><a class="reference internal" href="#prerequisites">Prerequisites</a><ul>
+<li><a class="reference internal" href="#python">Python</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#sphinx-setup">Sphinx Setup</a><ul>
+<li><a class="reference internal" href="#installing-the-theme-for-development">Installing the theme for development</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#site-setup">Site Setup</a><ul>
+<li><a class="reference internal" href="#building-the-site">Building the site</a></li>
+<li><a class="reference internal" href="#publishing-via-github-pages">Publishing via GitHub Pages</a></li>
+<li><a class="reference internal" href="#site-specific-settings">Site-specific settings</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#updating-the-theme-or-styles">Updating the Theme or Styles</a><ul>
+<li><a class="reference internal" href="#updating-site-styles">Updating site styles</a></li>
+<li><a class="reference internal" href="#updating-the-site-template">Updating the site template</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+  <li>
+    <a href="../index.html" title="Previous Chapter: LaunchCode Curriculum Docs"><span class="glyphicon glyphicon-chevron-left visible-sm"></span><span class="hidden-sm hidden-tablet">&laquo; LaunchCode Cu...</span>
+    </a>
+  </li>
+  <li>
+    <a href="working.html" title="Next Chapter: Working With An Existing Module Site"><span class="glyphicon glyphicon-chevron-right visible-sm"></span><span class="hidden-sm hidden-tablet">Working With ... &raquo;</span>
+    </a>
+  </li>
+<div id="sourcelink">
+  <a href="../_sources/building/setup.md.txt"
+     rel="nofollow">Source</a>
+</div>
+<form action="../search.html" method="get">
+ <div class="form-group">
+  <input type="text" name="q" class="form-control" placeholder="Search" />
+ </div>
+  <input type="hidden" name="check_keywords" value="yes" />
+  <input type="hidden" name="area" value="default" />
+</form>
+        </div>
+      </div>
+    <div class="col-md-9 content">
       
   <div class="section" id="setting-up-a-new-module-site">
 <span id="setting-up-a-new-module-site"></span><h1>Setting Up A New Module Site<a class="headerlink" href="#setting-up-a-new-module-site" title="Permalink to this headline">¶</a></h1>
@@ -224,6 +273,11 @@ The HTML pages are in docs.
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span>$ chmod +x build.sh
 </pre></div>
 </div>
+<p>Before you can commit, remove the following line from <code class="docutils literal notranslate"><span class="pre">.gitignore</span></code>:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">docs</span><span class="o">/*</span>
+</pre></div>
+</div>
+<p>At this point, it is very important to make sure you followed the directions above to point your <code class="docutils literal notranslate"><span class="pre">origin</span></code> remote at the right location.</p>
 <p>After the build successfully completes, add and commit the built site. You’ll have several new files and directories in this commit, since it will be the first (and only) time many of the site’s static files are moved into the <code class="docutils literal notranslate"><span class="pre">/docs</span></code>, from which they’ll be served.</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span>$ git add .
 $ git commit -m &quot;Initial build&quot;
