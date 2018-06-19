@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="../_static/bootstrap-sphinx.css" type="text/css" />
     <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
     <link rel="stylesheet" href="../_static/css/launchcode.css" type="text/css" />
-    <script type="text/javascript" src="../_static/documentation_options.js"></script>
+    <script type="text/javascript" id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
     <script type="text/javascript" src="../_static/jquery.js"></script>
     <script type="text/javascript" src="../_static/underscore.js"></script>
     <script type="text/javascript" src="../_static/doctools.js"></script>
@@ -122,49 +122,11 @@
 
 <div class="container">
   <div class="row">
-      <div class="col-md-3">
-        <div id="sidebar" class="bs-sidenav" role="complementary"><p class="topic-title">Page Contents</p>
-
-<ul>
-<li><a class="reference internal" href="#">Working With An Existing Module Site</a><ul>
-<li><a class="reference internal" href="#building-the-site">Building the Site</a></li>
-<li><a class="reference internal" href="#viewing-the-site-locally">Viewing the Site Locally</a><ul>
-<li><a class="reference internal" href="#macos-and-linux">macOS and Linux</a></li>
-<li><a class="reference internal" href="#windows">Windows</a></li>
-</ul>
-</li>
-<li><a class="reference internal" href="#editing-documents">Editing Documents</a></li>
-<li><a class="reference internal" href="#deploying">Deploying</a></li>
-</ul>
-</li>
-</ul>
-
-  <li>
-    <a href="setup.html" title="Previous Chapter: Setting Up A New Module Site"><span class="glyphicon glyphicon-chevron-left visible-sm"></span><span class="hidden-sm hidden-tablet">&laquo; Setting Up A ...</span>
-    </a>
-  </li>
-  <li>
-    <a href="../guide/style.html" title="Next Chapter: Style Guide"><span class="glyphicon glyphicon-chevron-right visible-sm"></span><span class="hidden-sm hidden-tablet">Style Guide &raquo;</span>
-    </a>
-  </li>
-<div id="sourcelink">
-  <a href="../_sources/building/working.md.txt"
-     rel="nofollow">Source</a>
-</div>
-<form action="../search.html" method="get">
- <div class="form-group">
-  <input type="text" name="q" class="form-control" placeholder="Search" />
- </div>
-  <input type="hidden" name="check_keywords" value="yes" />
-  <input type="hidden" name="area" value="default" />
-</form>
-        </div>
-      </div>
-    <div class="col-md-9 content">
+    <div class="col-md-12 content">
       
   <div class="section" id="working-with-an-existing-module-site">
 <span id="working-with-an-existing-module-site"></span><h1>Working With An Existing Module Site<a class="headerlink" href="#working-with-an-existing-module-site" title="Permalink to this headline">¶</a></h1>
-<p>To edit and publish content on an existing curriculum site, make sure you have the necessary prerequisites and have set up Sphinx, as detailed in <a class="reference external" href="building/setup.html">Setting Up A New Module Site</a>.</p>
+<p>To edit and publish content on an existing curriculum site, make sure you have the necessary prerequisites and have set up Sphinx, as detailed in <a class="reference external" href="building\setup.html">Setting Up A New Module Site</a>.</p>
 <div class="section" id="building-the-site">
 <span id="building-the-site"></span><h2>Building the Site<a class="headerlink" href="#building-the-site" title="Permalink to this headline">¶</a></h2>
 <p>Clone the repository and, from the project directory, verify that you can build the site.</p>
@@ -215,7 +177,26 @@ Serving HTTP on 0.0.0.0 port 8000 (http://0.0.0.0:8000/) ...
 </div>
 <div class="section" id="windows">
 <span id="windows"></span><h3>Windows<a class="headerlink" href="#windows" title="Permalink to this headline">¶</a></h3>
-<p>TODO</p>
+<p>First check to make sure you have a <code class="docutils literal notranslate"><span class="pre">~/.bash_profile</span></code> and a <code class="docutils literal notranslate"><span class="pre">~/.bashrc</span></code> file, as most Windows machines do not automatically create these files. If they do not exist create them using the following commands:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>$ touch ~/.bash_profile
+$ touch ~/.bashrc
+</pre></div>
+</div>
+<p>Now add the following line to your <code class="docutils literal notranslate"><span class="pre">.bash_profile</span></code> if it is not already there:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="k">if</span> <span class="p">[</span> <span class="o">-</span><span class="n">f</span> <span class="o">~/.</span><span class="n">bashrc</span> <span class="p">];</span> <span class="n">then</span>
+   <span class="n">source</span> <span class="o">~/.</span><span class="n">bashrc</span>
+<span class="n">fi</span>
+</pre></div>
+</div>
+<p>Then add the following line to your <code class="docutils literal notranslate"><span class="pre">.bashrc</span></code> file:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">alias</span> <span class="n">serve</span><span class="o">=</span><span class="s1">&#39;python -m http.server&#39;</span>
+</pre></div>
+</div>
+<p>Open a second terminal window and navigate to the project’s <code class="docutils literal notranslate"><span class="pre">/docs</span></code> folder. Then run:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>$ serve
+</pre></div>
+</div>
+<p>You can now view the site at <code class="docutils literal notranslate"><span class="pre">localhost:8000</span></code>. You can rebuild the site in another window while the server is still running, and changes will be immediately reflected.</p>
 </div>
 </div>
 <div class="section" id="editing-documents">
@@ -257,7 +238,7 @@ Serving HTTP on 0.0.0.0 port 8000 (http://0.0.0.0:8000/) ...
     </p>
     <p>
         &copy; Copyright 2018, LaunchCode.<br/>
-      Created using <a href="http://sphinx-doc.org/">Sphinx</a> 1.7.2.<br/>
+      Created using <a href="http://sphinx-doc.org/">Sphinx</a> 1.7.5.<br/>
     </p>
   </div>
 </footer>
