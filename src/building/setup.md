@@ -183,6 +183,8 @@ $ git merge upstream/master
 
 Then build the site, commit, and push.
 
+When merging, be very mindful of merge conflicts. In particular, conflicts in `index.rst` and `conf.py` are common. Additionally, you may have conflicts in `docs/` (the build directory). To deal with these, merge all other conflicts and rebuild the site.
+
 ### Updating the site template
 
 To update the site's template, update your local install of `sphinx-bootstrap-template`:
