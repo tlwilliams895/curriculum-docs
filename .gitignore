@@ -1,5 +1,7 @@
 .DS_Store
-_build
+_build/
 .vscode
-.temp
 __pycache__
+!.nojekyll
+.pyc
+__pycache__/

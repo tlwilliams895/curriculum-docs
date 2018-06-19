@@ -183,7 +183,7 @@ $ git merge upstream/master
 
 Then build the site, commit, and push.
 
-When merging, be very mindful of merge conflicts. In particular, conflicts in `index.rst` and `conf.py` are common. Additionally, you may have conflicts in `docs/` (the build directory). To deal with these, merge all other conflicts and rebuild the site.
+When merging, be very mindful of merge conflicts. In particular, conflicts in `index.rst` and `conf.py` are common. Additionally, you may have conflicts in `docs/` (the build directory). To deal with these, merge all other conflicts and rebuild the site. Also be watchful for any new files added by this merge. The merge may bring in images or `.rst` files that are not used by your project.
 
 ### Updating the site template
 
