@@ -61,7 +61,34 @@ You can now view the site at `localhost:8000`. You can rebuild the site in anoth
 
 ### Windows
 
-TODO
+First check to make sure you have a `~/.bash_profile` and a `~/.bashrc` file, as most Windows machines do not automatically create these files. If they do not exist create them using the following commands:
+
+```
+$ touch ~/.bash_profile
+$ touch ~/.bashrc
+```
+
+Now add the following line to your `.bash_profile` if it is not already there:
+
+```
+if [ -f ~/.bashrc ]; then
+   source ~/.bashrc
+fi
+```
+
+Then add the following line to your `.bashrc` file:
+
+```
+alias serve='python -m http.server'
+```
+
+Open a second terminal window and navigate to the project's `/docs` folder. Then run:
+
+```
+$ serve
+```
+
+You can now view the site at `localhost:8000`. You can rebuild the site in another window while the server is still running, and changes will be immediately reflected.
 
 ## Editing Documents
 
