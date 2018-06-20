@@ -194,7 +194,26 @@ Serving HTTP on 0.0.0.0 port 8000 (http://0.0.0.0:8000/) ...
 </div>
 <div class="section" id="windows">
 <span id="windows"></span><h3>Windows<a class="headerlink" href="#windows" title="Permalink to this headline">¶</a></h3>
-<p>TODO</p>
+<p>First check to make sure you have a <code class="docutils literal notranslate"><span class="pre">~/.bash_profile</span></code> and a <code class="docutils literal notranslate"><span class="pre">~/.bashrc</span></code> file, as most Windows machines do not automatically create these files. If they do not exist create them using the following commands:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>$ touch ~/.bash_profile
+$ touch ~/.bashrc
+</pre></div>
+</div>
+<p>Now add the following line to your <code class="docutils literal notranslate"><span class="pre">.bash_profile</span></code> if it is not already there:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="k">if</span> <span class="p">[</span> <span class="o">-</span><span class="n">f</span> <span class="o">~/.</span><span class="n">bashrc</span> <span class="p">];</span> <span class="n">then</span>
+   <span class="n">source</span> <span class="o">~/.</span><span class="n">bashrc</span>
+<span class="n">fi</span>
+</pre></div>
+</div>
+<p>Then add the following line to your <code class="docutils literal notranslate"><span class="pre">.bashrc</span></code> file:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">alias</span> <span class="n">serve</span><span class="o">=</span><span class="s1">&#39;python -m http.server&#39;</span>
+</pre></div>
+</div>
+<p>Open a second terminal window and navigate to the project’s <code class="docutils literal notranslate"><span class="pre">/docs</span></code> folder. Then run:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>$ serve
+</pre></div>
+</div>
+<p>You can now view the site at <code class="docutils literal notranslate"><span class="pre">localhost:8000</span></code>. You can rebuild the site in another window while the server is still running, and changes will be immediately reflected.</p>
 </div>
 </div>
 <div class="section" id="editing-documents">
