@@ -92,16 +92,105 @@ You can now view the site at `localhost:8000`. You can rebuild the site in anoth
 
 ## Editing Documents
 
-- Markdown reference: http://commonmark.org/
-- RST: 
-    - Sections: http://www.sphinx-doc.org/en/master/usage/restructuredtext/basics.html#sections
-- style guide
-- tables
-- images
-- avoid smart quotes
+Sites build using the LaunchCode Sphinx site template may have source code in either Markdown (abbreviated MD, with extension `.md`) or reStructuredText (abbreviated RST, with extension`.rst`) formats.
+
+Most LaunchCode Education sites rely primarily on RST, though in some cases it may be suitable to use MD source files.
+
+### reStructured Text
+
+#### Pros
+
+- Table of contents generation
+- Built-in admonition (note, warning, etc) support
+- Support for cross-page references
+
+#### Cons
+
+- More complicated syntax than MD
+- Less well-known among developers than MD
+- Table syntax is difficult to work with
+
+#### Working with RST
+
+reStructuredText can have a bit of a learning curve if you're accustomed to Markdown. That said, once you get used to the basics it has definite advantages to using MD.
+
+Read the [Sphinx reStructuredText Primer](http://www.sphinx-doc.org/en/stable/rest.html), and bookmark it as a reference. A modest familiarity with RST with go a long way toward allowing you to create rich curriculum pages.
+
+Here are a few things to note if you're new to RST:
+
+- RST is sensitive to whitespace in some cases. For example, when using a directive, the contents of the directive must be indented to align with the directive name (usually 3 spaces).
+- Tables in RST require alignment of column contents and column-separators vertically. This is a common gotcha for those new to RST.
+- Headings do not require a specific character (as MD does with `#`). Instead, any text underlined by a repeated occurance of the same character will be a heading. The level of the heading is determined by the order of the character used in the doc. For example:
+    ```
+    Level 1 Heading
+    ===============
+
+    Level 2 Heading
+    ---------------
+
+    Another Level 1 Heading
+    =======================
+    ```
+- The [RST and Sphinx Cheatsheet](http://openalea.gforge.inria.fr/doc/openalea/doc/_build/html/source/sphinx/rest_syntax.html) is a good resource for getting used to RST. Note that the rendered examples may look slightly different visually than those given due to differences between Sphinx templates.
+
+When building a site with Sphinx, you are often given robust and descriptive warnings and errors. At first, these can seem daunting ("Why is Sphinx always yelling at me?!") but paying attention to them can help you keep your markup code clean and avoid issues down the road. 
+
+### Markdown
+
+When setting up Sphinx via [our instructions](//building/setup.html#sphinx-setup) we had you install a Sphinx extension that enables support for [CommonMark](http://commonmark.org/), a widely-used Markdown specificaion. Note that CommonMark does not include widely-used features such as table support, which are part of MD language extensions (e.g. GitHub Markdown).
+
+#### Pros
+
+- Simple syntax
+- Is more widely known by developers than RST
+
+#### Cons
+
+- Lacks several useful features supported by RST (see above)
+- CommonMark does not support tables
+
+### Working with Markdown
+
+Many developers are already familiar with Markdown syntax. However, we still encourage all contributors to skim the [CommonMark docs](http://commonmark.org/help/) to make sure you're using features built into CommonMark, which is a smaller spec than many others.
+
+#### Tables
+
+CommonMark does not directly support Markdown tables. It is possible to support Markdown tables in Sphinx via a source-translation approach (MD -> RST -> HTML). As of July 2018, this feature has not been implemented, and is in the template development backlog. If you absolutely need to use tables in your pages, we recommend using RST instead.
+
+#### Aside Boxes
+
+The customized theme for LaunchCode Education sites supports a collection of callout boxes (aka "aside boxes" or "admonitions") via CSS. Read the [detailed usage notes](//guide/content.html) to include these in your pages.
+
+<aside class="aside-note">
+
+The custom aside boxes are likely to evolve in style to match the default styling of RST admonitions provided by Bootstrap.
+
+</aside>
+
+### Site Style
+
+When creating pages, use the [Style Guide](//guide/style.html). This guide provides some basic conventions for improving the look and feel of curriculum sites, while providing for consistency across sites.
 
 ## Deploying
 
-- deploying
-    - staff
-    - non-staff (via PR)
+Once you've made some changes to the site--edit, built, test, commit--you're ready to deploy. How to do this depends on your role.
+
+### Non-Staff Contributions
+
+For those not on the LaunchCode Education team, the recommended deployment mechanism is to create a pull request. This allows the team to review your changes, and to look for common formatting issues before deploying. 
+
+<aside class="aside-note">
+
+Some course instructors and TAs may be granded direct commit access to course curriculum modules, based on the circumstances. If you would like direct commit access, talk to somebody on the Education team.
+
+</aside>
+
+### Staff Contributions
+
+All Education Team staff should have push permission for the repositories that they're working on. Pushing changes to the GitHub repo will automatically deploy the new files.
+
+<aside class="aside-warning">
+
+Changes to GitHub Pages sites can take several minutes to be reflected. If you push and don't see your change, wait a few minutes and do a hard refresh of the page.
+
+</aside>

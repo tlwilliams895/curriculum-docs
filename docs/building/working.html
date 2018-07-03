@@ -131,8 +131,31 @@
 <li><a class="reference internal" href="#windows">Windows</a></li>
 </ul>
 </li>
-<li><a class="reference internal" href="#editing-documents">Editing Documents</a></li>
-<li><a class="reference internal" href="#deploying">Deploying</a></li>
+<li><a class="reference internal" href="#editing-documents">Editing Documents</a><ul>
+<li><a class="reference internal" href="#restructured-text">reStructured Text</a><ul>
+<li><a class="reference internal" href="#pros">Pros</a></li>
+<li><a class="reference internal" href="#cons">Cons</a></li>
+<li><a class="reference internal" href="#working-with-rst">Working with RST</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#markdown">Markdown</a><ul>
+<li><a class="reference internal" href="#pros">Pros</a></li>
+<li><a class="reference internal" href="#cons">Cons</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#working-with-markdown">Working with Markdown</a><ul>
+<li><a class="reference internal" href="#tables">Tables</a></li>
+<li><a class="reference internal" href="#aside-boxes">Aside Boxes</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#site-style">Site Style</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#deploying">Deploying</a><ul>
+<li><a class="reference internal" href="#non-staff-contributions">Non-Staff Contributions</a></li>
+<li><a class="reference internal" href="#staff-contributions">Staff Contributions</a></li>
+</ul>
+</li>
 </ul>
 </li>
 </ul>
@@ -218,27 +241,103 @@ $ touch ~/.bashrc
 </div>
 <div class="section" id="editing-documents">
 <span id="editing-documents"></span><h2>Editing Documents<a class="headerlink" href="#editing-documents" title="Permalink to this headline">¶</a></h2>
+<p>Sites build using the LaunchCode Sphinx site template may have source code in either Markdown (abbreviated MD, with extension <code class="docutils literal notranslate"><span class="pre">.md</span></code>) or reStructuredText (abbreviated RST, with extension<code class="docutils literal notranslate"><span class="pre">.rst</span></code>) formats.</p>
+<p>Most LaunchCode Education sites rely primarily on RST, though in some cases it may be suitable to use MD source files.</p>
+<div class="section" id="restructured-text">
+<span id="restructured-text"></span><h3>reStructured Text<a class="headerlink" href="#restructured-text" title="Permalink to this headline">¶</a></h3>
+<div class="section" id="pros">
+<span id="pros"></span><h4>Pros<a class="headerlink" href="#pros" title="Permalink to this headline">¶</a></h4>
 <ul class="simple">
-<li>Markdown reference: http://commonmark.org/</li>
-<li>RST:<ul>
-<li>Sections: http://www.sphinx-doc.org/en/master/usage/restructuredtext/basics.html#sections</li>
+<li>Table of contents generation</li>
+<li>Built-in admonition (note, warning, etc) support</li>
+<li>Support for cross-page references</li>
 </ul>
+</div>
+<div class="section" id="cons">
+<span id="cons"></span><h4>Cons<a class="headerlink" href="#cons" title="Permalink to this headline">¶</a></h4>
+<ul class="simple">
+<li>More complicated syntax than MD</li>
+<li>Less well-known among developers than MD</li>
+<li>Table syntax is difficult to work with</li>
+</ul>
+</div>
+<div class="section" id="working-with-rst">
+<span id="working-with-rst"></span><h4>Working with RST<a class="headerlink" href="#working-with-rst" title="Permalink to this headline">¶</a></h4>
+<p>reStructuredText can have a bit of a learning curve if you’re accustomed to Markdown. That said, once you get used to the basics it has definite advantages to using MD.</p>
+<p>Read the <a class="reference external" href="http://www.sphinx-doc.org/en/stable/rest.html">Sphinx reStructuredText Primer</a>, and bookmark it as a reference. A modest familiarity with RST with go a long way toward allowing you to create rich curriculum pages.</p>
+<p>Here are a few things to note if you’re new to RST:</p>
+<ul>
+<li><p class="first">RST is sensitive to whitespace in some cases. For example, when using a directive, the contents of the directive must be indented to align with the directive name (usually 3 spaces).</p>
 </li>
-<li>style guide</li>
-<li>tables</li>
-<li>images</li>
-<li>avoid smart quotes</li>
+<li><p class="first">Tables in RST require alignment of column contents and column-separators vertically. This is a common gotcha for those new to RST.</p>
+</li>
+<li><p class="first">Headings do not require a specific character (as MD does with <code class="docutils literal notranslate"><span class="pre">#</span></code>). Instead, any text underlined by a repeated occurance of the same character will be a heading. The level of the heading is determined by the order of the character used in the doc. For example:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">Level</span> <span class="mi">1</span> <span class="n">Heading</span>
+<span class="o">===============</span>
+
+<span class="n">Level</span> <span class="mi">2</span> <span class="n">Heading</span>
+<span class="o">---------------</span>
+
+<span class="n">Another</span> <span class="n">Level</span> <span class="mi">1</span> <span class="n">Heading</span>
+<span class="o">=======================</span>
+</pre></div>
+</div>
+</li>
+<li><p class="first">The <a class="reference external" href="http://openalea.gforge.inria.fr/doc/openalea/doc/_build/html/source/sphinx/rest_syntax.html">RST and Sphinx Cheatsheet</a> is a good resource for getting used to RST. Note that the rendered examples may look slightly different visually than those given due to differences between Sphinx templates.</p>
+</li>
 </ul>
+<p>When building a site with Sphinx, you are often given robust and descriptive warnings and errors. At first, these can seem daunting (“Why is Sphinx always yelling at me?!”) but paying attention to them can help you keep your markup code clean and avoid issues down the road.</p>
+</div>
+</div>
+<div class="section" id="markdown">
+<span id="markdown"></span><h3>Markdown<a class="headerlink" href="#markdown" title="Permalink to this headline">¶</a></h3>
+<p>When setting up Sphinx via <a class="reference external" href="../../../../../../building/setup.html#sphinx-setup">our instructions</a> we had you install a Sphinx extension that enables support for <a class="reference external" href="http://commonmark.org/">CommonMark</a>, a widely-used Markdown specificaion. Note that CommonMark does not include widely-used features such as table support, which are part of MD language extensions (e.g. GitHub Markdown).</p>
+<div class="section" id="pros">
+<span id="id1"></span><h4>Pros<a class="headerlink" href="#pros" title="Permalink to this headline">¶</a></h4>
+<ul class="simple">
+<li>Simple syntax</li>
+<li>Is more widely known by developers than RST</li>
+</ul>
+</div>
+<div class="section" id="cons">
+<span id="id2"></span><h4>Cons<a class="headerlink" href="#cons" title="Permalink to this headline">¶</a></h4>
+<ul class="simple">
+<li>Lacks several useful features supported by RST (see above)</li>
+<li>CommonMark does not support tables</li>
+</ul>
+</div>
+</div>
+<div class="section" id="working-with-markdown">
+<span id="working-with-markdown"></span><h3>Working with Markdown<a class="headerlink" href="#working-with-markdown" title="Permalink to this headline">¶</a></h3>
+<p>Many developers are already familiar with Markdown syntax. However, we still encourage all contributors to skim the <a class="reference external" href="http://commonmark.org/help/">CommonMark docs</a> to make sure you’re using features built into CommonMark, which is a smaller spec than many others.</p>
+<div class="section" id="tables">
+<span id="tables"></span><h4>Tables<a class="headerlink" href="#tables" title="Permalink to this headline">¶</a></h4>
+<p>CommonMark does not directly support Markdown tables. It is possible to support Markdown tables in Sphinx via a source-translation approach (MD -&gt; RST -&gt; HTML). As of July 2018, this feature has not been implemented, and is in the template development backlog. If you absolutely need to use tables in your pages, we recommend using RST instead.</p>
+</div>
+<div class="section" id="aside-boxes">
+<span id="aside-boxes"></span><h4>Aside Boxes<a class="headerlink" href="#aside-boxes" title="Permalink to this headline">¶</a></h4>
+<p>The customized theme for LaunchCode Education sites supports a collection of callout boxes (aka “aside boxes” or “admonitions”) via CSS. Read the <a class="reference external" href="../../../../../../guide/content.html">detailed usage notes</a> to include these in your pages.</p>
+<aside class="aside-note"><p>The custom aside boxes are likely to evolve in style to match the default styling of RST admonitions provided by Bootstrap.</p>
+</aside></div>
+</div>
+<div class="section" id="site-style">
+<span id="site-style"></span><h3>Site Style<a class="headerlink" href="#site-style" title="Permalink to this headline">¶</a></h3>
+<p>When creating pages, use the <a class="reference external" href="../../../../../../guide/style.html">Style Guide</a>. This guide provides some basic conventions for improving the look and feel of curriculum sites, while providing for consistency across sites.</p>
+</div>
 </div>
 <div class="section" id="deploying">
 <span id="deploying"></span><h2>Deploying<a class="headerlink" href="#deploying" title="Permalink to this headline">¶</a></h2>
-<ul class="simple">
-<li>deploying<ul>
-<li>staff</li>
-<li>non-staff (via PR)</li>
-</ul>
-</li>
-</ul>
+<p>Once you’ve made some changes to the site–edit, built, test, commit–you’re ready to deploy. How to do this depends on your role.</p>
+<div class="section" id="non-staff-contributions">
+<span id="non-staff-contributions"></span><h3>Non-Staff Contributions<a class="headerlink" href="#non-staff-contributions" title="Permalink to this headline">¶</a></h3>
+<p>For those not on the LaunchCode Education team, the recommended deployment mechanism is to create a pull request. This allows the team to review your changes, and to look for common formatting issues before deploying.</p>
+<aside class="aside-note"><p>Some course instructors and TAs may be granded direct commit access to course curriculum modules, based on the circumstances. If you would like direct commit access, talk to somebody on the Education team.</p>
+</aside></div>
+<div class="section" id="staff-contributions">
+<span id="staff-contributions"></span><h3>Staff Contributions<a class="headerlink" href="#staff-contributions" title="Permalink to this headline">¶</a></h3>
+<p>All Education Team staff should have push permission for the repositories that they’re working on. Pushing changes to the GitHub repo will automatically deploy the new files.</p>
+<aside class="aside-warning"><p>Changes to GitHub Pages sites can take several minutes to be reflected. If you push and don’t see your change, wait a few minutes and do a hard refresh of the page.</p>
+</aside></div>
 </div>
 </div>
 
