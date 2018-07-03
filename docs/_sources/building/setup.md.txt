@@ -133,13 +133,23 @@ If the build script fails due to a permissions error, enable its executable bit:
 $ chmod +x build.sh
 ```
 
+<aside class="aside-note">
+
+At this point, if you wish to view the site locally then follow the [instructions to set up a local HTTP preview server](//building/working.html#viewing-the-site-locally).
+
+</aside>
+
 Before you can commit, remove the following line from `.gitignore`:
 
 ```
 docs/*
 ```
 
+<aside class="aside-warning">
+
 At this point, it is very important to make sure you followed the directions above to point your `origin` remote at the right location.
+
+</aside>
 
 After the build successfully completes, add and commit the built site. You'll have several new files and directories in this commit, since it will be the first (and only) time many of the site's static files are moved into the `/docs`, from which they'll be served.
 
