@@ -159,7 +159,7 @@ CommonMark does not directly support Markdown tables. It is possible to support 
 
 #### Aside Boxes
 
-The customized theme for LaunchCode Education sites supports a collection of callout boxes (aka "aside boxes" or "admonitions") via CSS. Read the [detailed usage notes](//guide/content.html) to include these in your pages.
+The customized theme for LaunchCode Education sites supports a collection of callout boxes (aka "aside boxes" or "admonitions") via CSS. Read the [detailed usage notes](/guide/content.html) to include these in your pages.
 
 <aside class="aside-note">
 
