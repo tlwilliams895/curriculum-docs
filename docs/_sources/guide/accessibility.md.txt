@@ -1,91 +1,25 @@
 # Curriculum Accessibility
 
 ## WCAG 2.0
-The internationally-accepted guidelines for web accessibility are the WCAG 2.0. Those guidelines lay out sucess criteria for various regulations that make websites more accessible to all readers. The guidelines are based on four principles of accessibility.
+The internationally-accepted guidelines for web accessibility are the [WCAG 2.0](https://www.w3.org/TR/WCAG20/), which was published by the [W3C](https://www.w3.org/). At this time, the U.S. Federal Government has not issued separate guidelines for web accessibility.
+
+```eval_rst
+.. note::
+   The W3C released WCAG 2.1 on June 5, 2018. The addition of several success criteria may cause this page to be updated in the near future.
+```
+
+Those guidelines lay out success criteria for various regulations that make websites more accessible to all readers. The guidelines are based on four principles of accessibility:
 
 1. Perceivable
 2. Operable
 3. Understandable
 4. Robust
 
-## Colors
+In testing curriculum pages, we offer a checklist that allows you to navigate through your own pages and quickly assess where you stand in terms of accessibility, as well as a list of tools that you will find helpful in testing your pages.
 
-Contrast plays a big role in determining how readable our materials are for people with low vision. Contrast ratios are used as the ratio can help determine how readable our materials are for students with low vision and color deficiencies. The contrast can be calculated using different tools online such as [Contrast-Ratio](https://contrast-ratio.com). The acceptable ratios will vary based on the size of the font with the ratio increasing as the font size decreases. The acceptable ratios are:
-
-1. 3 : 1 is the minimum acceptable level for people with standard vision or 20/20 vision.
-2. 4.5 : 1 is the ratio required for level AA, as it compensates for individuals with less contrast sensitivity due to loss of vision. This corresponds to 20/40 vision.
-3. 7 : 1 is the ratio required for level AAA. This corresponds to 20/80 vision.
-
-Please note, someone who is legally blind has 20/200 central vision acuity.
-
-### Colors and Comparisons
-
-LaunchCode Education uses all of LaunchCode's colors. Below is a table of compliant color combinations.
-
-```eval_rst
-========== ========= ===================
-Color One  Color Two Level of Compliance
-========== ========= ===================
-Dark Blue  White     Level AAA
-Dark Blue  Grey      Level AA
-Dark Blue  Orange    Acceptable
-Light Blue White     Acceptable
-========== ========= ===================
-```
-
-When working with the CoderGirl sites, LaunchCode Education uses the specific CoderGirl colors. Below is a table of compliant color combinations.
-
-```eval_rst
-========== ========= ===================
-Color One  Color Two Level of Compliance
-========== ========= ===================
-Dark Blue  Green     Acceptable
-Dark Blue  Grey      Level AA
-Dark Blue  Orange    Level AA
-Dark Blue  White     Level AAA
-Light Blue White     Acceptable
-========== ========= ===================
-```
-
-## HTML
-
-As developers striving for accessible curriculum and using static site generators, it is vital to keep an eye out on the HTML that Sphinx produces. Many assistive technologies such as screen readers use HTML as a way to guide through the page.
-
-### Headings
-Many screen reader users will navigate through the page first by headings. This is why it is important to make sure that headings don't skip levels.
-
-What not to do:
-1. h1
-2. h3
-3. h2
-
-What to do:
-1. h1
-2. h2
-3. h3
-
-### Lists
-Providing content in a logical and ordered manner is a mandate of accessibility guidelines. As a result, when using a list, ordered lists should be used over unordered lists. Using an ordered list will help users with assistive technologies navigate the page.
-
-### ARIA
-ARIA tags can be used to clarify specific aspects of a user interface. WAI-ARIA 1.0 are the accepted guidelines regarding the use of ARIA. One important thing to keep in mind before implementing ARIA is that no ARIA is better than bad ARIA.
-
-## Images
-Images are non-text content and cannot be read by a screen reader or other assistive technology. When using non-text content, the developer can do a number of things to make sure that the alternate text or `alt` used is descriptive for the user.
-
-### Alternate text
-In curriculum development, a lot of images used are screenshots illustrating expected outcomes. Because of that, a short description using `alt` should be supplemented with a longer description in the text.
-
-## Videos
-Videos are another form of non-text content. Because of the combination of audio and video, developers should double check that they have provided as many accessibility aids as possible.
-
-Since many users are already accustomed to Youtube's platform, one quick thing a developer can do to ease the user's experience can be providing a link to the video on Youtube in addition to embedding it within the site.
-
-### Audio
-With time-based non-text content, audio accommodations go beyond closed captioning.
 ## Testing Curriculum Pages
 
-### Technologies and Extensions
+### Extensions and Assistive Software for Testing
 
 #### Extensions
 
@@ -111,7 +45,7 @@ With time-based non-text content, audio accommodations go beyond closed captioni
 3. Keyboard-enabled Browsing: many users may opt to navigate pages with their keyboards as opposed to a trackpad or mouse. To test whether or not the users can easily navigate the page, developers can turn on keyboard-enabled browsing in the Accessibility settings of System Preferences.
 
 ### Run through WCAG Checklist
-The WCAG are incredibly long and ever-changing. A good way to test your site's accessibility is by looking at the site through different lenses.
+The WCAG are incredibly long and ever-changing. A good way to test your site's accessibility is by looking at the site through different lenses. Steven Lambert broke down the Lenses of Accessibility in his article, [Designing for Accessibility and Inclusion](https://www.smashingmagazine.com/2018/04/designing-accessibility-inclusion/).
 
 1. The Lens of Animation and Effect
     1. Are there animations or effects on this page?
@@ -181,7 +115,7 @@ The WCAG are incredibly long and ever-changing. A good way to test your site's a
         * No: edit the labels for clarity.
         * Yes: Move on to the next lens.
 11. The Lens of Structure
-    1. Is the HTML structurred in such a way that a screen reader can navigate the page?
+    1. Is the HTML structured in such a way that a screen reader can navigate the page?
         * No: Restructure the HTML so that a user with a screen reader can easily navigate the page.
         * Yes: Move on to the next lens.
 12. The Lens of Time
@@ -190,3 +124,84 @@ The WCAG are incredibly long and ever-changing. A good way to test your site's a
         * No: You have checked the whole page!
 
 One final important step is to have another person check your page!
+
+## Colors
+
+Color contrast plays a big role in determining how readable our materials are for people with low vision. When using a evaluation tool like aXe, color contrast errors may come up. If you see one, please note the element that is effected so that the styling can be changed. Contrast ratios are used as the ratio can help determine how readable our materials are for students with low vision and color deficiencies. The contrast can be calculated using different tools online such as [Contrast-Ratio](https://contrast-ratio.com). The acceptable ratios will vary based on the size of the font with the ratio increasing as the font size decreases. The acceptable ratios are:
+
+1. 3 : 1 is the minimum acceptable level for people with standard vision or 20/20 vision (Level A).
+2. 4.5 : 1 is the ratio required for level AA, as it compensates for individuals with less contrast sensitivity due to loss of vision. This corresponds to 20/40 vision.
+3. 7 : 1 is the ratio required for level AAA. This corresponds to 20/80 vision.
+
+```eval_rst
+.. note::
+   Please note, someone who is legally blind has 20/200 central vision acuity.
+```
+
+### Colors and Comparisons
+<!--- add swatches? --->
+LaunchCode Education uses all of LaunchCode's colors. Below is a table of compliant color combinations.
+
+```eval_rst
+========== ========= ===================
+Color One  Color Two Level of Compliance
+========== ========= ===================
+Dark Blue  White     Level AAA
+Dark Blue  Grey      Level AA
+Dark Blue  Orange    Acceptable
+Light Blue White     Acceptable
+========== ========= ===================
+```
+
+When working with the CoderGirl sites, LaunchCode Education uses the specific CoderGirl colors. Below is a table of compliant color combinations.
+
+```eval_rst
+========== ========= ===================
+Color One  Color Two Level of Compliance
+========== ========= ===================
+Dark Blue  Green     Acceptable
+Dark Blue  Grey      Level AA
+Dark Blue  Orange    Level AA
+Dark Blue  White     Level AAA
+Light Blue White     Acceptable
+========== ========= ===================
+```
+
+## HTML
+
+As developers striving for accessible curriculum and using static site generators, it is vital to keep an eye out on the HTML that Sphinx produces. Many assistive technologies such as screen readers use HTML as a way to guide through the page.
+
+### Headings
+Many screen reader users will navigate through the page first by headings. This is why it is important to make sure that headings don't skip levels.
+<!--- talk about how developers can test with different software and look out at the rst and md level --->
+
+What not to do:
+1. h1, #
+2. h3, ###
+3. h2, ##
+
+What to do:
+1. h1, #
+2. h2, ##
+3. h3, ###
+
+### Lists
+Providing content in a logical and ordered manner is a mandate of accessibility guidelines. As a result, when using a list, ordered lists should be used over unordered lists. Using an ordered list will help users with assistive technologies navigate the page.
+
+### ARIA
+ARIA tags can be used to clarify specific aspects of a user interface. WAI-ARIA 1.0 are the accepted guidelines regarding the use of ARIA. One important thing to keep in mind before implementing ARIA is that no ARIA is better than bad ARIA.
+
+## Images
+Images are non-text content and cannot be read by a screen reader or other assistive technology. When using non-text content, the developer can do a number of things to make sure that the alternate text or `alt` used is descriptive for the user.
+<!--- alt text decision tree --->
+
+### Alternate text
+In curriculum development, a lot of images used are screenshots illustrating expected outcomes. Because of that, a short description using `alt` should be supplemented with a longer description in the text.
+
+## Videos
+Videos are another form of non-text content. Because of the combination of audio and video, developers should double check that they have provided as many accessibility aids as possible.
+
+Since many users are already accustomed to Youtube's platform, one quick thing a developer can do to ease the user's experience can be providing a link to the video on Youtube in addition to embedding it within the site.
+
+### Audio
+With time-based non-text content, audio accommodations go beyond closed captioning.
