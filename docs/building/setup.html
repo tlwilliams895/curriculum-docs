@@ -261,7 +261,7 @@ The HTML pages are in docs.
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span>$ chmod +x build.sh
 </pre></div>
 </div>
-<aside class="aside-note"><p>At this point, if you wish to view the site locally then follow the <a class="reference external" href="../../../../building/working.html#viewing-the-site-locally">instructions to set up a local HTTP preview server</a>.</p>
+<aside class="aside-note"><p>At this point, if you wish to view the site locally then follow the <a class="reference external" href="../../../../../building/working.html#viewing-the-site-locally">instructions to set up a local HTTP preview server</a>.</p>
 </aside><p>Before you can commit, remove the following line from <code class="docutils literal notranslate"><span class="pre">.gitignore</span></code>:</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">docs</span><span class="o">/*</span>
 </pre></div>
@@ -310,8 +310,8 @@ $ git merge upstream/master
 </div>
 <div class="section" id="updating-the-site-template">
 <span id="updating-the-site-template"></span><h3>Updating the site template<a class="headerlink" href="#updating-the-site-template" title="Permalink to this headline">¶</a></h3>
-<p>To update the site’s template, update your local install of <code class="docutils literal notranslate"><span class="pre">sphinx-bootstrap-template</span></code>:</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>$ pip install git+https://github.com/LaunchCodeEducation/sphinx-bootstrap-theme.git@master
+<p>To update the site’s template, update your local install of <code class="docutils literal notranslate"><span class="pre">sphinx-bootstrap-template</span></code> (<code class="docutils literal notranslate"><span class="pre">--upprade</span></code> forces the package to be downloaded again):</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>$ pip install --upgrade git+https://github.com/LaunchCodeEducation/sphinx-bootstrap-theme.git@master
 </pre></div>
 </div>
 <p>Then build the site, commit, and push.</p>
