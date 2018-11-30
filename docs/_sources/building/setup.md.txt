@@ -48,6 +48,12 @@ Install the LaunchCode fork of the `sphinx-bootstrap-theme` Sphinx theme.
 $ pip install git+https://github.com/LaunchCodeEducation/sphinx-bootstrap-theme.git@master
 ```
 
+Install pypandoc because if you don't, you will see an error after running build
+
+```
+$ pip install pypandoc
+```
+
 ### Installing the theme for development
 
 <aside class="aside-note">
