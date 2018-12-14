@@ -44,6 +44,10 @@ source_suffix = ['.rst', '.md']
 source_parsers = {'.md': 'recommonmark.parser.CommonMarkParser'}
 
 html_copy_source = True
+html_show_sourcelink = True
+highlight_language = 'none'
+html_show_copyright = False
+html_show_sphinx = False
 
 # The master toctree document.
 master_doc = 'index'
@@ -125,7 +129,7 @@ default_theme_options = {
 
     # Location of link to source.
     # Options are "nav" (default), "footer" or anything else to exclude.
-    'source_link_position': "none",
+    'source_link_position': "footer",
 
     'bootswatch_theme': "launchcode",
     'bootstrap_version': "3",
@@ -148,8 +152,10 @@ html_static_path = ['_static']
 #
 html_sidebars = {
     '**': ['localtoc.html'],
-    'index': []
-    }
+    'index': [],
+    'search': [],
+    'about': []
+}
 
 
 # -- Options for HTMLHelp output ---------------------------------------------
@@ -165,6 +171,7 @@ todo_include_todos = False
 
 def setup(app):
     app.add_stylesheet('css/launchcode.css')
+    app.add_stylesheet('https://djwbyvgln9kts.cloudfront.net/launch_ed_style/custom.css')
     app.add_config_value('recommonmark_config', {
             'enable_eval_rst': True,
             }, True)

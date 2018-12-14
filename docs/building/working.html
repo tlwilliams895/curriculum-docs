@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="../_static/bootstrap-sphinx.css" type="text/css" />
     <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
     <link rel="stylesheet" href="../_static/css/launchcode.css" type="text/css" />
+    <link rel="stylesheet" href="https://djwbyvgln9kts.cloudfront.net/launch_ed_style/custom.css" type="text/css" />
     <script type="text/javascript" src="../_static/documentation_options.js"></script>
     <script type="text/javascript" src="../_static/jquery.js"></script>
     <script type="text/javascript" src="../_static/underscore.js"></script>
@@ -170,7 +171,7 @@
 <div class="section" id="building-the-site">
 <span id="building-the-site"></span><h2>Building the Site<a class="headerlink" href="#building-the-site" title="Permalink to this headline">¶</a></h2>
 <p>Clone the repository and, from the project directory, verify that you can build the site.</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>$ ./build.sh
+<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>$ ./build.sh
 Running Sphinx v1.7.2
 loading pickled environment... not yet created
 building [mo]: all of 0 po files
@@ -194,7 +195,7 @@ The HTML pages are in docs.
 </pre></div>
 </div>
 <p>If the build script fails due to a permissions error, enable its executable bit:</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>$ chmod +x build.sh
+<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>$ chmod +x build.sh
 </pre></div>
 </div>
 <p>The build script builds HTML files from the source Markdown and reStructuredText files, using a template. It places the built files in the <code class="docutils literal notranslate"><span class="pre">/docs</span></code> folder so they can be hosted via GitHub Pages.</p>
@@ -205,11 +206,11 @@ The HTML pages are in docs.
 <div class="section" id="macos-and-linux">
 <span id="macos-and-linux"></span><h3>macOS and Linux<a class="headerlink" href="#macos-and-linux" title="Permalink to this headline">¶</a></h3>
 <p>Add the following line to your <code class="docutils literal notranslate"><span class="pre">~/.bash_profile</span></code> (macOS) or <code class="docutils literal notranslate"><span class="pre">~/.bashrc</span></code> (Linux):</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">alias</span> <span class="n">serve</span><span class="o">=</span><span class="s1">&#39;python -m http.server&#39;</span>
+<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>alias serve=&#39;python -m http.server&#39;
 </pre></div>
 </div>
 <p>Open a second terminal window and navigate to the project’s <code class="docutils literal notranslate"><span class="pre">/docs</span></code> folder. Then run:</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>$ serve
+<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>$ serve
 Serving HTTP on 0.0.0.0 port 8000 (http://0.0.0.0:8000/) ...
 </pre></div>
 </div>
@@ -218,22 +219,22 @@ Serving HTTP on 0.0.0.0 port 8000 (http://0.0.0.0:8000/) ...
 <div class="section" id="windows">
 <span id="windows"></span><h3>Windows<a class="headerlink" href="#windows" title="Permalink to this headline">¶</a></h3>
 <p>First check to make sure you have a <code class="docutils literal notranslate"><span class="pre">~/.bash_profile</span></code> and a <code class="docutils literal notranslate"><span class="pre">~/.bashrc</span></code> file, as most Windows machines do not automatically create these files. If they do not exist create them using the following commands:</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>$ touch ~/.bash_profile
+<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>$ touch ~/.bash_profile
 $ touch ~/.bashrc
 </pre></div>
 </div>
 <p>Now add the following line to your <code class="docutils literal notranslate"><span class="pre">.bash_profile</span></code> if it is not already there:</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="k">if</span> <span class="p">[</span> <span class="o">-</span><span class="n">f</span> <span class="o">~/.</span><span class="n">bashrc</span> <span class="p">];</span> <span class="n">then</span>
-   <span class="n">source</span> <span class="o">~/.</span><span class="n">bashrc</span>
-<span class="n">fi</span>
+<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>if [ -f ~/.bashrc ]; then
+   source ~/.bashrc
+fi
 </pre></div>
 </div>
 <p>Then add the following line to your <code class="docutils literal notranslate"><span class="pre">.bashrc</span></code> file:</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">alias</span> <span class="n">serve</span><span class="o">=</span><span class="s1">&#39;python -m http.server&#39;</span>
+<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>alias serve=&#39;python -m http.server&#39;
 </pre></div>
 </div>
 <p>Open a second terminal window and navigate to the project’s <code class="docutils literal notranslate"><span class="pre">/docs</span></code> folder. Then run:</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>$ serve
+<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>$ serve
 </pre></div>
 </div>
 <p>You can now view the site at <code class="docutils literal notranslate"><span class="pre">localhost:8000</span></code>. You can rebuild the site in another window while the server is still running, and changes will be immediately reflected.</p>
@@ -272,14 +273,14 @@ $ touch ~/.bashrc
 <li><p class="first">Tables in RST require alignment of column contents and column-separators vertically. This is a common gotcha for those new to RST.</p>
 </li>
 <li><p class="first">Headings do not require a specific character (as MD does with <code class="docutils literal notranslate"><span class="pre">#</span></code>). Instead, any text underlined by a repeated occurance of the same character will be a heading. The level of the heading is determined by the order of the character used in the doc. For example:</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">Level</span> <span class="mi">1</span> <span class="n">Heading</span>
-<span class="o">===============</span>
+<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>Level 1 Heading
+===============
 
-<span class="n">Level</span> <span class="mi">2</span> <span class="n">Heading</span>
-<span class="o">---------------</span>
+Level 2 Heading
+---------------
 
-<span class="n">Another</span> <span class="n">Level</span> <span class="mi">1</span> <span class="n">Heading</span>
-<span class="o">=======================</span>
+Another Level 1 Heading
+=======================
 </pre></div>
 </div>
 </li>
@@ -351,10 +352,15 @@ $ touch ~/.bashrc
     <p class="pull-right">
       <a href="#">Back to top</a>
       
+        <br/>
+        
+<div id="sourcelink">
+  <a href="../_sources/building/working.md.txt"
+     rel="nofollow">Page Source</a>
+</div>
+      
     </p>
     <p>
-        &copy; Copyright 2018, LaunchCode.<br/>
-      Created using <a href="http://sphinx-doc.org/">Sphinx</a> 1.7.2.<br/>
     </p>
   </div>
 </footer>

@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="../_static/bootstrap-sphinx.css" type="text/css" />
     <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
     <link rel="stylesheet" href="../_static/css/launchcode.css" type="text/css" />
+    <link rel="stylesheet" href="https://djwbyvgln9kts.cloudfront.net/launch_ed_style/custom.css" type="text/css" />
     <script type="text/javascript" src="../_static/documentation_options.js"></script>
     <script type="text/javascript" src="../_static/jquery.js"></script>
     <script type="text/javascript" src="../_static/underscore.js"></script>
@@ -160,12 +161,12 @@
 <span id="python"></span><h3>Python<a class="headerlink" href="#python" title="Permalink to this headline">¶</a></h3>
 <p>Working with our Sphinx setup requires Python 3.5+.</p>
 <p>Check your Python version:</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>$ python -V
+<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>$ python -V
 Python 3.6.1 :: Continuum Analytics, Inc.
 </pre></div>
 </div>
 <p>On some systems, Python 3 will be installed as <code class="docutils literal notranslate"><span class="pre">python3</span></code>:</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>$ python3 -V
+<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>$ python3 -V
 Python 3.6.5
 </pre></div>
 </div>
@@ -176,22 +177,22 @@ Python 3.6.5
 <div class="section" id="sphinx-setup">
 <span id="sphinx-setup"></span><h2>Sphinx Setup<a class="headerlink" href="#sphinx-setup" title="Permalink to this headline">¶</a></h2>
 <p>Install <a class="reference external" href="http://www.sphinx-doc.org/en/master/">Sphinx</a>:</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>$ pip install sphinx
+<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>$ pip install sphinx
 </pre></div>
 </div>
 <p>Install <a class="reference external" href="https://recommonmark.readthedocs.io/en/latest/">Recommonmark</a> to allow for writing of Markdown files in Sphinx:</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>$ pip install recommonmark
+<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>$ pip install recommonmark
 </pre></div>
 </div>
 <p>Install the LaunchCode fork of the <code class="docutils literal notranslate"><span class="pre">sphinx-bootstrap-theme</span></code> Sphinx theme.</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>$ pip install git+https://github.com/LaunchCodeEducation/sphinx-bootstrap-theme.git@master
+<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>$ pip install git+https://github.com/LaunchCodeEducation/sphinx-bootstrap-theme.git@master
 </pre></div>
 </div>
 <div class="section" id="installing-the-theme-for-development">
 <span id="installing-the-theme-for-development"></span><h3>Installing the theme for development<a class="headerlink" href="#installing-the-theme-for-development" title="Permalink to this headline">¶</a></h3>
 <aside class="aside-note"><p>Only complete this step if you want to edit the theme for all sites. Otherwise, skip to the next section.</p>
 </aside><p>If you want to make changes to the theme, clone its <a class="reference external" href="https://github.com/LaunchCodeEducation/sphinx-bootstrap-theme">GitHub repo</a>. From the repository directory <code class="docutils literal notranslate"><span class="pre">sphinx-bootstrap-theme/</span></code>, run:</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>$ pip install -e .
+<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>$ pip install -e .
 </pre></div>
 </div>
 <p>This installs the Python package from the source contained in the cloned repo.</p>
@@ -200,32 +201,32 @@ Python 3.6.5
 <div class="section" id="site-setup">
 <span id="site-setup"></span><h2>Site Setup<a class="headerlink" href="#site-setup" title="Permalink to this headline">¶</a></h2>
 <p>Clone the site template into a new directory:</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>$ git clone git@github.com:LaunchCodeEducation/curriculum-module-template.git SITE_NAME
+<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>$ git clone git@github.com:LaunchCodeEducation/curriculum-module-template.git SITE_NAME
 </pre></div>
 </div>
 <p>Alternatively, if you don’t have an SSH key, use HTTP:</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>$ git clone http://github.com/LaunchCodeEducation/curriculum-module-template SITE_NAME
+<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>$ git clone http://github.com/LaunchCodeEducation/curriculum-module-template SITE_NAME
 </pre></div>
 </div>
 <p>Make the module template repository the new site’s <code class="docutils literal notranslate"><span class="pre">upstream</span></code> remote, for ease of updating:</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>$ git remote rm origin
+<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>$ git remote rm origin
 $ git remote add upstream git@github.com:LaunchCodeEducation/curriculum-module-template.git
 </pre></div>
 </div>
 <p>Or, with HTTP:</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>$ git remote rm origin
+<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>$ git remote rm origin
 $ git remote add upstream http://github.com/LaunchCodeEducation/curriculum-module-template
 </pre></div>
 </div>
 <p>Create a new <em>empty</em> repository on GitHub, under <a class="reference external" href="https://github.com/LaunchCodeEducation">&#64;LaunchCodeEducation</a> or <a class="reference external" href="https://github.com/LaunchCoderGirlSTL">&#64;LaunchCoderGirl</a>, as appropriate. Add the new repo as a remote to your local repository, and push:</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>$ git remote add origin NEW_REPO_URL
+<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>$ git remote add origin NEW_REPO_URL
 $ git push origin master
 </pre></div>
 </div>
 <div class="section" id="building-the-site">
 <span id="building-the-site"></span><h3>Building the site<a class="headerlink" href="#building-the-site" title="Permalink to this headline">¶</a></h3>
 <p>Now build the site and push, so we can configure GitHub Pages:</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>$ ./build.sh
+<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>$ ./build.sh
 Running Sphinx v1.7.2
 loading pickled environment... not yet created
 building [mo]: all of 0 po files
@@ -249,17 +250,17 @@ The HTML pages are in docs.
 </pre></div>
 </div>
 <p>If the build script fails due to a permissions error, enable its executable bit:</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>$ chmod +x build.sh
+<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>$ chmod +x build.sh
 </pre></div>
 </div>
 <aside class="aside-note"><p>At this point, if you wish to view the site locally then follow the <a class="reference external" href="../../../../../../building/working.html#viewing-the-site-locally">instructions to set up a local HTTP preview server</a>.</p>
 </aside><p>Before you can commit, remove the following line from <code class="docutils literal notranslate"><span class="pre">.gitignore</span></code>:</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">docs</span><span class="o">/*</span>
+<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>docs/*
 </pre></div>
 </div>
 <aside class="aside-warning"><p>At this point, it is very important to make sure you followed the directions above to point your <code class="docutils literal notranslate"><span class="pre">origin</span></code> remote at the right location.</p>
 </aside><p>After the build successfully completes, add and commit the built site. You’ll have several new files and directories in this commit, since it will be the first (and only) time many of the site’s static files are moved into the <code class="docutils literal notranslate"><span class="pre">/docs</span></code>, from which they’ll be served.</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>$ git add .
+<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>$ git add .
 $ git commit -m &quot;Initial build&quot;
 $ git push origin master
 </pre></div>
@@ -292,7 +293,7 @@ $ git push origin master
 <div class="section" id="updating-site-styles">
 <span id="updating-site-styles"></span><h3>Updating site styles<a class="headerlink" href="#updating-site-styles" title="Permalink to this headline">¶</a></h3>
 <p>To update the site template (get changes to <code class="docutils literal notranslate"><span class="pre">_static</span></code> files, <code class="docutils literal notranslate"><span class="pre">build.sh</span></code>, and other files from <code class="docutils literal notranslate"><span class="pre">curriculum-module-template</span></code>), fetch the upstream changes and merge them into the <code class="docutils literal notranslate"><span class="pre">master</span></code> branch.</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>$ git fetch upstream
+<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>$ git fetch upstream
 $ git merge upstream/master
 </pre></div>
 </div>
@@ -302,7 +303,7 @@ $ git merge upstream/master
 <div class="section" id="updating-the-site-template">
 <span id="updating-the-site-template"></span><h3>Updating the site template<a class="headerlink" href="#updating-the-site-template" title="Permalink to this headline">¶</a></h3>
 <p>To update the site’s template, update your local install of <code class="docutils literal notranslate"><span class="pre">sphinx-bootstrap-template</span></code>:</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>$ pip install git+https://github.com/LaunchCodeEducation/sphinx-bootstrap-theme.git@master
+<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>$ pip install git+https://github.com/LaunchCodeEducation/sphinx-bootstrap-theme.git@master
 </pre></div>
 </div>
 <p>Then build the site, commit, and push.</p>
@@ -320,10 +321,15 @@ $ git merge upstream/master
     <p class="pull-right">
       <a href="#">Back to top</a>
       
+        <br/>
+        
+<div id="sourcelink">
+  <a href="../_sources/building/setup.md.txt"
+     rel="nofollow">Page Source</a>
+</div>
+      
     </p>
     <p>
-        &copy; Copyright 2018, LaunchCode.<br/>
-      Created using <a href="http://sphinx-doc.org/">Sphinx</a> 1.7.2.<br/>
     </p>
   </div>
 </footer>
