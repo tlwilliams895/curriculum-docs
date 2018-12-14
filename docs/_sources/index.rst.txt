@@ -21,6 +21,7 @@ Style and Formatting
 
    guide/style
    guide/content
+   guide/accessibility
 
 Creating Curriculum
 ===================
@@ -30,5 +31,3 @@ Creating Curriculum
 
    curriculum/creating
    curriculum/making-videos
-
-

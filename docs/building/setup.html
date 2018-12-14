@@ -81,6 +81,15 @@
 <li class="toctree-l2"><a class="reference internal" href="../guide/content.html#aside-boxes">Aside Boxes</a></li>
 </ul>
 </li>
+<li class="toctree-l1"><a class="reference internal" href="../guide/accessibility.html">Curriculum Accessibility</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../guide/accessibility.html#wcag-2-0">WCAG 2.0</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../guide/accessibility.html#testing-curriculum-pages">Testing Curriculum Pages</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../guide/accessibility.html#colors">Colors</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../guide/accessibility.html#html">HTML</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../guide/accessibility.html#images">Images</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../guide/accessibility.html#videos">Videos</a></li>
+</ul>
+</li>
 </ul>
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="../curriculum/creating.html">How To Create Curriculum</a><ul>
@@ -186,6 +195,10 @@ Python 3.6.5
 </div>
 <p>Install the LaunchCode fork of the <code class="docutils literal notranslate"><span class="pre">sphinx-bootstrap-theme</span></code> Sphinx theme.</p>
 <div class="highlight-none notranslate"><div class="highlight"><pre><span></span>$ pip install git+https://github.com/LaunchCodeEducation/sphinx-bootstrap-theme.git@master
+</pre></div>
+</div>
+<p>Install pypandoc because if you don’t, you will see an error after running build</p>
+<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>$ pip install pypandoc
 </pre></div>
 </div>
 <div class="section" id="installing-the-theme-for-development">
@@ -302,8 +315,8 @@ $ git merge upstream/master
 </div>
 <div class="section" id="updating-the-site-template">
 <span id="updating-the-site-template"></span><h3>Updating the site template<a class="headerlink" href="#updating-the-site-template" title="Permalink to this headline">¶</a></h3>
-<p>To update the site’s template, update your local install of <code class="docutils literal notranslate"><span class="pre">sphinx-bootstrap-template</span></code>:</p>
-<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>$ pip install git+https://github.com/LaunchCodeEducation/sphinx-bootstrap-theme.git@master
+<p>To update the site’s template, update your local install of <code class="docutils literal notranslate"><span class="pre">sphinx-bootstrap-template</span></code> (<code class="docutils literal notranslate"><span class="pre">--upprade</span></code> forces the package to be downloaded again):</p>
+<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>$ pip install --upgrade git+https://github.com/LaunchCodeEducation/sphinx-bootstrap-theme.git@master
 </pre></div>
 </div>
 <p>Then build the site, commit, and push.</p>

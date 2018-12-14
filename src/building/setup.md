@@ -48,6 +48,12 @@ Install the LaunchCode fork of the `sphinx-bootstrap-theme` Sphinx theme.
 $ pip install git+https://github.com/LaunchCodeEducation/sphinx-bootstrap-theme.git@master
 ```
 
+Install pypandoc because if you don't, you will see an error after running build
+
+```
+$ pip install pypandoc
+```
+
 ### Installing the theme for development
 
 <aside class="aside-note">
@@ -197,10 +203,10 @@ When merging, be very mindful of merge conflicts. In particular, conflicts in `i
 
 ### Updating the site template
 
-To update the site's template, update your local install of `sphinx-bootstrap-template`:
+To update the site's template, update your local install of `sphinx-bootstrap-template` (`--upprade` forces the package to be downloaded again):
 
 ```
-$ pip install git+https://github.com/LaunchCodeEducation/sphinx-bootstrap-theme.git@master
+$ pip install --upgrade git+https://github.com/LaunchCodeEducation/sphinx-bootstrap-theme.git@master
 ```
 
 Then build the site, commit, and push.
