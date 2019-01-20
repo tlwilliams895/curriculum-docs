@@ -37,7 +37,7 @@
           <span class="icon-bar"></span>
           <span class="icon-bar"></span>
         </button>
-        <a class="navbar-brand" href="../index.html"><span><img src="../_static/lc-logo.svg"></span>
+        <a class="navbar-brand" href="../index.html"><span><img src="../_static/lc-logo.svg" alt=""></span>
           Curriculum Docs</a>
         <span class="navbar-text navbar-version pull-left"><b></b></span>
       </div>
@@ -217,11 +217,11 @@ Python 3.6.5
 <div class="highlight-none notranslate"><div class="highlight"><pre><span></span>$ git clone git@github.com:LaunchCodeEducation/curriculum-module-template.git SITE_NAME
 </pre></div>
 </div>
-<p>Alternatively, if you don’t have an SSH key, use HTTP:</p>
+<p>Alternatively, if you don’t have an SSH key configured for your GitHub account, use HTTP:</p>
 <div class="highlight-none notranslate"><div class="highlight"><pre><span></span>$ git clone http://github.com/LaunchCodeEducation/curriculum-module-template SITE_NAME
 </pre></div>
 </div>
-<p>Make the module template repository the new site’s <code class="docutils literal notranslate"><span class="pre">upstream</span></code> remote, for ease of updating:</p>
+<p>Move into the new project directory. Make the module template repository the new site’s <code class="docutils literal notranslate"><span class="pre">upstream</span></code> remote, for ease of updating the site when the <code class="docutils literal notranslate"><span class="pre">curriculum-module-template</span></code> repository is updated:</p>
 <div class="highlight-none notranslate"><div class="highlight"><pre><span></span>$ git remote rm origin
 $ git remote add upstream git@github.com:LaunchCodeEducation/curriculum-module-template.git
 </pre></div>
@@ -287,7 +287,7 @@ $ git push origin master
 </div>
 <div class="section" id="site-specific-settings">
 <span id="site-specific-settings"></span><h3>Site-specific settings<a class="headerlink" href="#site-specific-settings" title="Permalink to this headline">¶</a></h3>
-<p>At the top of <code class="docutils literal notranslate"><span class="pre">conf.py</span></code>, add your site-specific settings. Be sure to at least configure:</p>
+<p>At the top of <code class="docutils literal notranslate"><span class="pre">src/conf.py</span></code>, add your site-specific settings. Be sure to at least configure:</p>
 <ul class="simple">
 <li>Variables in <code class="docutils literal notranslate"><span class="pre">site_theme_options</span></code>:<ul>
 <li><code class="docutils literal notranslate"><span class="pre">navbar_title</span></code>: The site name that will appear in the navbar.</li>

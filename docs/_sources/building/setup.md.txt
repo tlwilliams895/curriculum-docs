@@ -78,13 +78,13 @@ Clone the site template into a new directory:
 $ git clone git@github.com:LaunchCodeEducation/curriculum-module-template.git SITE_NAME
 ```
 
-Alternatively, if you don't have an SSH key, use HTTP:
+Alternatively, if you don't have an SSH key configured for your GitHub account, use HTTP:
 
 ```
 $ git clone http://github.com/LaunchCodeEducation/curriculum-module-template SITE_NAME
 ```
 
-Make the module template repository the new site's `upstream` remote, for ease of updating:
+Move into the new project directory. Make the module template repository the new site's `upstream` remote, for ease of updating the site when the `curriculum-module-template` repository is updated:
 
 ```
 $ git remote rm origin
@@ -175,7 +175,7 @@ After a couple of minutes, you should be able to access the live site via its Gi
 
 ### Site-specific settings
 
-At the top of `conf.py`, add your site-specific settings. Be sure to at least configure:
+At the top of `src/conf.py`, add your site-specific settings. Be sure to at least configure:
 
 - Variables in `site_theme_options`:
     - `navbar_title`: The site name that will appear in the navbar.
