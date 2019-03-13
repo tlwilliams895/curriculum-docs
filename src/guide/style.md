@@ -2,31 +2,15 @@
 
 This is a work-in-progress guide to writing and formatting content for LaunchCode education programs.
 
-We identify three levels of current implementation for each category:
-
-- *Strict*: Follow these guidelines at all times. If you find a violation of the guideline, fix it. Strict guidelines are generally widely-implemented.
-- *Moderate*: Implementation is more flexible -- more readily allowing for exceptions based on context -- and is generally less complete.
-- *Aspirational*: Guidelines we aspire to implement more regularly. These are generally less impactful to the student, but are good for standardizing and maintaining a high level of quality.
-
-This guide assumes that you are working with Markdown files. For the corresponding reST syntax, refer to the [reStructuredText Primer](http://www.sphinx-doc.org/en/stable/rest.html).
-
 ## Headings
 
-Level: *Strict*
-
-**Levels 1-2**: Use sentence case (all major words of the headline capitalized). For the definition of "major word" we defer to AP style:
+For headings, use sentence case (all major words of the headline capitalized). For the definition of "major word" we defer to AP style:
 
 > Capitalize the first word of every letter except articles, coordinating conjunctions, and prepositions of three letters or fewer. There’s one exception: Any word that is the first word in the headline or the last word should be capitalized, regardless of its part of speech.
 
-**Levels 3+**: Capitalize only the first word.
-
-**Code snippets**: Any words or characters that would otherwise be formatted using inline code formatting (e.g. backtics in markdown) should *not* have such formatting applied when part of a heading. Furthermore, the case of such words or characters should not be modified to match the capitalization rules above; they should remain the same case that they would be when used.
-
 ## Application and UI Labels
 
-Level: *Moderate*
-
-Format labels for applications menus and other UI components using italics.
+Format labels for application menus and other UI components using italics.
 
 <aside class="aside-example">
 
@@ -36,7 +20,11 @@ To open a file in Atom, use *File > Open*.
 
 ## Code Segments
 
-Level: *Strict*
+<aside class="aside-note">
+
+The following section uses Markdown syntax. The same principles apply for RST, but with the corresponding syntax. See the RST section below for info on how you should format code segments in RST.
+
+</aside>
 
 ### Fenced code blocks
 
@@ -91,3 +79,48 @@ There is a literal backtic here: ``(`)``
 One exception to this rule is when any of these elements appears in a heading. See the [Headings](#headings) section for details.
 
 </aside>
+
+## Linking
+
+When adding a link to a page, create a **semantic link** if at all possible. A semantic link is one in which the text content of the link describes the destination URL. In particular, links with text content that is the destination URL itself should be *avoided at all costs!*
+
+Here is a semantic link:
+
+<aside class="aside-example">
+
+Read about <a href="https://education.launchcode.org/skills-back-end-java/java4python/data-types/">data types in Java</a>.
+
+</aside>
+
+Here is a non-semantic link:
+
+<aside class="aside-example">
+
+Read about data types in Java <a href="https://education.launchcode.org/skills-back-end-java/java4python/data-types/">here</a>.
+
+</aside>
+
+And this is about the worst thing you can do:
+
+<aside class="aside-">
+
+Read about data types in Java at <a href="https://education.launchcode.org/skills-back-end-java/java4python/data-types/">https://education.launchcode.org/skills-back-end-java/java4python/data-types/</a>.
+
+</aside>
+
+## RST Conventions
+
+- For headings, the hierarchy of characters underlining text should be: `=` (level-1 headings), `-` (level-2 headings), `^` (level-3 headings).
+- `.. sourcecode::` and `.. code-block::` are synonymous directives for creating fenced code blocks, but we prefer `.. sourcecode::`.
+- When using `::` to format unhighlighted literal blocks, place the `::` on their own line.
+- Use double backtics to surround inline code segments: ` ``x`` `.
+- For ordered lists, use `#.` over numeric item lables like `1.`
+- Use `.. figure::` over `.. image::` since the former has a richer set of options.
+
+## Language Conventions
+
+- Use the Oxford comma!
+- Use a single space after end-of-sentence punctuation! 
+- Use "JavaScript" over the abbrevition "JS"
+- Hyphenate compound adjectives, such as "left-hand side"
+- Prefer "cannot" over "can not"
