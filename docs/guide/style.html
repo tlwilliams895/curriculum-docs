@@ -7,12 +7,12 @@
     <title>Style Guide &#8212; LaunchCode Curriculum Docs  documentation</title>
     <link rel="stylesheet" href="../_static/bootstrap-sphinx.css" type="text/css" />
     <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
-    <link rel="stylesheet" href="../_static/css/launchcode.css" type="text/css" />
-    <link rel="stylesheet" href="https://djwbyvgln9kts.cloudfront.net/launch_ed_style/custom.css" type="text/css" />
-    <script type="text/javascript" src="../_static/documentation_options.js"></script>
+    <link rel="stylesheet" type="text/css" href="../_static/css/launchcode.css" />
+    <script type="text/javascript" id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
     <script type="text/javascript" src="../_static/jquery.js"></script>
     <script type="text/javascript" src="../_static/underscore.js"></script>
     <script type="text/javascript" src="../_static/doctools.js"></script>
+    <script type="text/javascript" src="../_static/language_data.js"></script>
     <script type="text/javascript" src="../_static/js/jquery-1.11.0.min.js"></script>
     <script type="text/javascript" src="../_static/js/jquery-fix.js"></script>
     <script type="text/javascript" src="../_static/bootstrap-3.3.7/js/bootstrap.min.js"></script>
@@ -37,7 +37,7 @@
           <span class="icon-bar"></span>
           <span class="icon-bar"></span>
         </button>
-        <a class="navbar-brand" href="../index.html"><span><img src="../_static/lc-logo.svg" alt=""></span>
+        <a class="navbar-brand" href="../index.html"><span><img src="../_static/lc-logo.svg" alt="LaunchCode logo"></span>
           Curriculum Docs</a>
         <span class="navbar-text navbar-version pull-left"><b></b></span>
       </div>
@@ -157,24 +157,24 @@
     <div class="col-md-9 content">
       
   <div class="section" id="style-guide">
-<span id="style-guide"></span><h1>Style Guide<a class="headerlink" href="#style-guide" title="Permalink to this headline">¶</a></h1>
+<h1>Style Guide<a class="headerlink" href="#style-guide" title="Permalink to this headline">¶</a></h1>
 <p>This is a work-in-progress guide to writing and formatting content for LaunchCode education programs.</p>
 <div class="section" id="headings">
-<span id="headings"></span><h2>Headings<a class="headerlink" href="#headings" title="Permalink to this headline">¶</a></h2>
+<h2>Headings<a class="headerlink" href="#headings" title="Permalink to this headline">¶</a></h2>
 <p>For headings, use sentence case (all major words of the headline capitalized). For the definition of “major word” we defer to AP style:</p>
 <blockquote>
 <div>Capitalize the first word of every letter except articles, coordinating conjunctions, and prepositions of three letters or fewer. There’s one exception: Any word that is the first word in the headline or the last word should be capitalized, regardless of its part of speech.</div></blockquote>
 </div>
 <div class="section" id="application-and-ui-labels">
-<span id="application-and-ui-labels"></span><h2>Application and UI Labels<a class="headerlink" href="#application-and-ui-labels" title="Permalink to this headline">¶</a></h2>
+<h2>Application and UI Labels<a class="headerlink" href="#application-and-ui-labels" title="Permalink to this headline">¶</a></h2>
 <p>Format labels for application menus and other UI components using italics.</p>
 <aside class="aside-example"><p>To open a file in Atom, use <em>File &gt; Open</em>.</p>
 </aside></div>
 <div class="section" id="code-segments">
-<span id="code-segments"></span><h2>Code Segments<a class="headerlink" href="#code-segments" title="Permalink to this headline">¶</a></h2>
+<h2>Code Segments<a class="headerlink" href="#code-segments" title="Permalink to this headline">¶</a></h2>
 <aside class="aside-note"><p>The following section uses Markdown syntax. The same principles apply for RST, but with the corresponding syntax. See the RST section below for info on how you should format code segments in RST.</p>
 </aside><div class="section" id="fenced-code-blocks">
-<span id="fenced-code-blocks"></span><h3>Fenced code blocks<a class="headerlink" href="#fenced-code-blocks" title="Permalink to this headline">¶</a></h3>
+<h3>Fenced code blocks<a class="headerlink" href="#fenced-code-blocks" title="Permalink to this headline">¶</a></h3>
 <p>For code segments more than two or three words long, or for those that warrant calling the user’s attention to, use triple-backtics (<code class="docutils literal notranslate"><span class="pre">`</span></code>) or triple-tildes (<code class="docutils literal notranslate"><span class="pre">~</span></code>) to create a fenced code block. Add the language in question just after the opening triple to enable syntax higlighting.</p>
 <div class="highlight-md notranslate"><div class="highlight"><pre><span></span><span class="s">```java</span>
 <span class="kd">public</span> <span class="kd">static</span> <span class="kt">int</span> <span class="n">counter</span><span class="o">;</span>
@@ -192,7 +192,7 @@ $ javac Hello.java
 <p>Shell commands displayed in block style should include a generic prompt: <code class="docutils literal notranslate"><span class="pre">\$</span></code>. Shell commands displayed inline (as below) should <em>not</em> be prepended with <code class="docutils literal notranslate"><span class="pre">\$</span></code>.</p>
 </div>
 <div class="section" id="inline-code">
-<span id="inline-code"></span><h3>Inline code<a class="headerlink" href="#inline-code" title="Permalink to this headline">¶</a></h3>
+<h3>Inline code<a class="headerlink" href="#inline-code" title="Permalink to this headline">¶</a></h3>
 <p>For short segments, or individual code words, enclose in single backtics:</p>
 <div class="highlight-md notranslate"><div class="highlight"><pre><span></span>The <span class="sb">`static`</span> keyword in Java is used to...
 </pre></div>
@@ -211,7 +211,7 @@ $ javac Hello.java
 </aside></div>
 </div>
 <div class="section" id="linking">
-<span id="linking"></span><h2>Linking<a class="headerlink" href="#linking" title="Permalink to this headline">¶</a></h2>
+<h2>Linking<a class="headerlink" href="#linking" title="Permalink to this headline">¶</a></h2>
 <p>When adding a link to a page, create a <strong>semantic link</strong> if at all possible. A semantic link is one in which the text content of the link describes the destination URL. In particular, links with text content that is the destination URL itself should be <em>avoided at all costs!</em></p>
 <p>Here is a semantic link:</p>
 <aside class="aside-example"><p>Read about <a href="https://education.launchcode.org/skills-back-end-java/java4python/data-types/">data types in Java</a>.</p>
@@ -221,7 +221,7 @@ $ javac Hello.java
 <aside class="aside-"><p>Read about data types in Java at <a href="https://education.launchcode.org/skills-back-end-java/java4python/data-types/">https://education.launchcode.org/skills-back-end-java/java4python/data-types/</a>.</p>
 </aside></div>
 <div class="section" id="rst-conventions">
-<span id="rst-conventions"></span><h2>RST Conventions<a class="headerlink" href="#rst-conventions" title="Permalink to this headline">¶</a></h2>
+<h2>RST Conventions<a class="headerlink" href="#rst-conventions" title="Permalink to this headline">¶</a></h2>
 <ul class="simple">
 <li>For headings, the hierarchy of characters underlining text should be: <code class="docutils literal notranslate"><span class="pre">=</span></code> (level-1 headings), <code class="docutils literal notranslate"><span class="pre">-</span></code> (level-2 headings), <code class="docutils literal notranslate"><span class="pre">^</span></code> (level-3 headings).</li>
 <li><code class="docutils literal notranslate"><span class="pre">..</span> <span class="pre">sourcecode::</span></code> and <code class="docutils literal notranslate"><span class="pre">..</span> <span class="pre">code-block::</span></code> are synonymous directives for creating fenced code blocks, but we prefer <code class="docutils literal notranslate"><span class="pre">..</span> <span class="pre">sourcecode::</span></code>.</li>
@@ -232,7 +232,7 @@ $ javac Hello.java
 </ul>
 </div>
 <div class="section" id="language-conventions">
-<span id="language-conventions"></span><h2>Language Conventions<a class="headerlink" href="#language-conventions" title="Permalink to this headline">¶</a></h2>
+<h2>Language Conventions<a class="headerlink" href="#language-conventions" title="Permalink to this headline">¶</a></h2>
 <ul class="simple">
 <li>Use the Oxford comma!</li>
 <li>Use a single space after end-of-sentence punctuation!</li>
