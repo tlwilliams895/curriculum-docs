@@ -7,6 +7,11 @@
  *
  * Designed and built with all the love in the world @twitter by @mdo and @fat.
  */
+ .searchLabel {
+  color:white;
+  font-size: 1.4vw;
+  font-family: "Nexa Black";
+}
 
 .clearfix {
   *zoom: 1;
