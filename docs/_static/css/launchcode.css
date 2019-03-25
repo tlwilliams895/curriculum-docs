@@ -1,11 +1,6 @@
 /* a, a:hover, a:focus {
 	color: #df552d;
 } */
-.searchLabel {
-    color:white;
-    font-size: 1.4vw;
-    font-family: "Nexa Black";
-}
 
 h1 {
     /* TODO: this should be in /repos/bootswatch/launchcode/variables.less after we learn how to alter the theme */
@@ -41,6 +36,12 @@ code {
 .navbar-brand img {
     margin-top: -10px;
     margin-right: 10px;
+}
+
+.searchLabel {
+    color:white;
+    font-size: 1.4vw;
+    font-family: "Nexa Black";
 }
 
 /* Trick to prevent section headings from hiding behind the navbar */
@@ -288,8 +289,7 @@ div.contents a:hover {
 .bs-sidenav .nav > li > a:focus {
     background-color: #fff;
     border: none;
-    /*color: #354a5f;*/
-    color:green;
+    color: #354a5f;
 }
 
 .bs-sidenav > .nav-list {

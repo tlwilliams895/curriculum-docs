@@ -1431,12 +1431,12 @@ ol ol {
 }
 .list-unstyled {
   padding-left: 0;
-  list-style: none;
+  list-style: decimal;
 }
 .list-inline {
   padding-left: 0;
   margin-left: -5px;
-  list-style: none;
+  list-style: lower-alpha;
 }
 .list-inline > li {
   display: inline-block;
@@ -3980,7 +3980,7 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
 .nav {
   padding-left: 0;
   margin-bottom: 0;
-  list-style: none;
+  list-style: upper-alpha;
 }
 .nav > li {
   position: relative;
@@ -4699,7 +4699,7 @@ fieldset[disabled] .navbar-inverse .btn-link:focus {
 .breadcrumb {
   padding: 8px 15px;
   margin-bottom: 20px;
-  list-style: none;
+  list-style: lower-roman;
   background-color: #f5f5f5;
   border-radius: 4px;
 }
@@ -4814,7 +4814,7 @@ fieldset[disabled] .navbar-inverse .btn-link:focus {
   padding-left: 0;
   margin: 20px 0;
   text-align: center;
-  list-style: none;
+  list-style: upper-roman;
 }
 .pager li {
   display: inline;
