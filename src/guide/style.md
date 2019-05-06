@@ -26,7 +26,7 @@ The most obvious usage is to include a verbatim statement by another person or e
 
 Ryan said, "I used to think less was more, but now I'm thinking more is more!"
 
-You might be thinking to yourself, *JavaScript sure is a crazy language!*. And you'd be right.
+You might be thinking to yourself, *JavaScript sure is a crazy language!* And you'd be right.
 
 </aside>
 
