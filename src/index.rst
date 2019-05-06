@@ -20,7 +20,8 @@ Style and Formatting
    :maxdepth: 2
 
    guide/style
-   guide/content
+   guide/admonitions
+   guide/aside-boxes
    guide/accessibility
 
 Creating Curriculum
