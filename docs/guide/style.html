@@ -7,19 +7,18 @@
     <title>Style Guide &#8212; LaunchCode Curriculum Docs  documentation</title>
     <link rel="stylesheet" href="../_static/bootstrap-sphinx.css" type="text/css" />
     <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
-    <link rel="stylesheet" type="text/css" href="../_static/css/launchcode.css" />
-    <script type="text/javascript" id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+    <link rel="stylesheet" href="../_static/css/launchcode.css" type="text/css" />
+    <script type="text/javascript" src="../_static/documentation_options.js"></script>
     <script type="text/javascript" src="../_static/jquery.js"></script>
     <script type="text/javascript" src="../_static/underscore.js"></script>
     <script type="text/javascript" src="../_static/doctools.js"></script>
-    <script type="text/javascript" src="../_static/language_data.js"></script>
     <script type="text/javascript" src="../_static/js/jquery-1.11.0.min.js"></script>
     <script type="text/javascript" src="../_static/js/jquery-fix.js"></script>
     <script type="text/javascript" src="../_static/bootstrap-3.3.7/js/bootstrap.min.js"></script>
     <script type="text/javascript" src="../_static/bootstrap-sphinx.js"></script>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
-    <link rel="next" title="Content" href="content.html" />
+    <link rel="next" title="Admonitions" href="admonitions.html" />
     <link rel="prev" title="Working With An Existing Module Site" href="../building/working.html" />
 <meta charset='utf-8'>
 <meta http-equiv='X-UA-Compatible' content='IE=edge,chrome=1'>
@@ -73,15 +72,21 @@
 <ul class="current">
 <li class="toctree-l1 current"><a class="current reference internal" href="#">Style Guide</a><ul>
 <li class="toctree-l2"><a class="reference internal" href="#headings">Headings</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#application-and-ui-labels">Application and UI Labels</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#code-segments">Code Segments</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#quotes">Quotes</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#formatting-for-emphasis">Formatting for Emphasis</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#formatting-for-semantic-meaning">Formatting for Semantic Meaning</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#linking">Linking</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#rst-conventions">RST Conventions</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#language-conventions">Language Conventions</a></li>
 </ul>
 </li>
-<li class="toctree-l1"><a class="reference internal" href="content.html">Content</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="content.html#aside-boxes">Aside Boxes</a></li>
+<li class="toctree-l1"><a class="reference internal" href="admonitions.html">Admonitions</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="admonitions.html#admonition-usage">Admonition Usage</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="aside-boxes.html">Aside Boxes</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="aside-boxes.html#box-types">Box Types</a></li>
+<li class="toctree-l2"><a class="reference internal" href="aside-boxes.html#code-editor-snippets">Code Editor Snippets</a></li>
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="accessibility.html">Curriculum Accessibility</a><ul>
@@ -139,10 +144,16 @@
         <div id="sidebar" class="bs-sidenav" role="complementary"><ul>
 <li><a class="reference internal" href="#">Style Guide</a><ul>
 <li><a class="reference internal" href="#headings">Headings</a></li>
+<li><a class="reference internal" href="#quotes">Quotes</a></li>
+<li><a class="reference internal" href="#formatting-for-emphasis">Formatting for Emphasis</a></li>
+<li><a class="reference internal" href="#formatting-for-semantic-meaning">Formatting for Semantic Meaning</a><ul>
+<li><a class="reference internal" href="#vocabulary-words">Vocabulary Words</a></li>
 <li><a class="reference internal" href="#application-and-ui-labels">Application and UI Labels</a></li>
 <li><a class="reference internal" href="#code-segments">Code Segments</a><ul>
 <li><a class="reference internal" href="#fenced-code-blocks">Fenced code blocks</a></li>
 <li><a class="reference internal" href="#inline-code">Inline code</a></li>
+</ul>
+</li>
 </ul>
 </li>
 <li><a class="reference internal" href="#linking">Linking</a></li>
@@ -157,24 +168,59 @@
     <div class="col-md-9 content">
       
   <div class="section" id="style-guide">
-<h1>Style Guide<a class="headerlink" href="#style-guide" title="Permalink to this headline">¶</a></h1>
+<span id="style-guide"></span><h1>Style Guide<a class="headerlink" href="#style-guide" title="Permalink to this headline">¶</a></h1>
 <p>This is a work-in-progress guide to writing and formatting content for LaunchCode education programs.</p>
+<p>For general grammar, style, and punctuation guidelines not covered here, refer to the <a class="reference external" href="https://owl.purdue.edu/owl/general_writing/index.html">Purdue Online Writing Lab (OWL)</a>.</p>
 <div class="section" id="headings">
-<h2>Headings<a class="headerlink" href="#headings" title="Permalink to this headline">¶</a></h2>
+<span id="headings"></span><h2>Headings<a class="headerlink" href="#headings" title="Permalink to this headline">¶</a></h2>
 <p>For headings, use sentence case (all major words of the headline capitalized). For the definition of “major word” we defer to AP style:</p>
 <blockquote>
 <div>Capitalize the first word of every letter except articles, coordinating conjunctions, and prepositions of three letters or fewer. There’s one exception: Any word that is the first word in the headline or the last word should be capitalized, regardless of its part of speech.</div></blockquote>
+<p>Every page should begin with a level-1 heading, and heading levels should never be skipped. For example, do not use a level-3 heading below a level-1 heading without a level-2 heading in between.</p>
+<p>Use headings to segment content by topic. <em>Do not</em> use headings for emphasis.</p>
+<p>Headings should also enable easy reference. When writing a heading, consider how well it describes the section’s contents. If a reader saw the heading in a table of contents, would they have a general idea of what it contains?</p>
+</div>
+<div class="section" id="quotes">
+<span id="quotes"></span><h2>Quotes<a class="headerlink" href="#quotes" title="Permalink to this headline">¶</a></h2>
+<p>Quotes have semantic meaning, and should therefore be used only in specific circumstances.</p>
+<p>The most obvious usage is to include a verbatim statement by another person or entity. In the case of a rhetorical or hypothetical statement, use italics.</p>
+<aside class="aside-example"><p>Ryan said, “I used to think less was more, but now I’m thinking more is more!”</p>
+<p>You might be thinking to yourself, <em>JavaScript sure is a crazy language!</em> And you’d be right.</p>
+</aside><p>The only other proper use of quotes is to refer to a word as an object within a sentence.</p>
+<aside class="aside-example"><p>When it comes to words, “circumlocution” is one of the best.</p>
+</aside><p>When using quotes in this way, all punctuation goes <em>outside</em> the quotes.</p>
+<p>Finally, when writing curriculum you should <em>avoid using scare quotes.</em> Scare quotes are quotation marks used around a word or phrase intended to signal irony or derrision.</p>
+<aside class="aside-example"><p>The Internet is built on HTML, a “programming language” introduced in 1993.</p>
+</aside><p>The use of scare quotes is overtly colloquial and can be confusing. If tempted to use scare quotes, rethink what you want to convey and find a way to do it without them. Not convinced? <a class="reference external" href="https://www.dailywritingtips.com/3-erroneous-uses-of-scare-quotes/">Read a few reasons why scare quotes should be avoided.</a></p>
+<p>In all cases, use double quotes unless including a direct quotation that itself includes a quote.</p>
+</div>
+<div class="section" id="formatting-for-emphasis">
+<span id="formatting-for-emphasis"></span><h2>Formatting for Emphasis<a class="headerlink" href="#formatting-for-emphasis" title="Permalink to this headline">¶</a></h2>
+<p>To call attention to a sentence, phrase, or word within a paragraph, you may use italicized text.</p>
+<aside class="aside-example"><p>JavaScript <em>does not</em> allow you to specify the types of parameters, though the JavaScript extension TypeScript does.</p>
+</aside><p>It is also acceptable to use all-caps to emphasize text. However, we prefer italics over all-caps in most situations, and all-caps should be avoided for phrases and sentences.</p>
+<aside class="aside-example"><p>JavaScript does NOT allow you to specify the types of parameters, though the JavaScript extension TypeScript does.</p>
+</aside><p>Finally, italics and all-caps should <em>RARELY</em> be used to emphasize the same content.</p>
+</div>
+<div class="section" id="formatting-for-semantic-meaning">
+<span id="formatting-for-semantic-meaning"></span><h2>Formatting for Semantic Meaning<a class="headerlink" href="#formatting-for-semantic-meaning" title="Permalink to this headline">¶</a></h2>
+<p>Formatting may convey additional information about a word or phrase. This is what we mean by “semantic meaning.”</p>
+<div class="section" id="vocabulary-words">
+<span id="vocabulary-words"></span><h3>Vocabulary Words<a class="headerlink" href="#vocabulary-words" title="Permalink to this headline">¶</a></h3>
+<p>When an important term is first used and defined, format it in bold.</p>
+<aside class="aside-example"><p>A <strong>function</strong> is a callable, reusable piece of code.</p>
+</aside><p>In the majority of cases, you will only bold a vocab word the first time it is used. On occassion, it may make sense to bold the word a second time, at a different location, if it is being reintroduced in a new way.</p>
 </div>
 <div class="section" id="application-and-ui-labels">
-<h2>Application and UI Labels<a class="headerlink" href="#application-and-ui-labels" title="Permalink to this headline">¶</a></h2>
+<span id="application-and-ui-labels"></span><h3>Application and UI Labels<a class="headerlink" href="#application-and-ui-labels" title="Permalink to this headline">¶</a></h3>
 <p>Format labels for application menus and other UI components using italics.</p>
 <aside class="aside-example"><p>To open a file in Atom, use <em>File &gt; Open</em>.</p>
 </aside></div>
 <div class="section" id="code-segments">
-<h2>Code Segments<a class="headerlink" href="#code-segments" title="Permalink to this headline">¶</a></h2>
+<span id="code-segments"></span><h3>Code Segments<a class="headerlink" href="#code-segments" title="Permalink to this headline">¶</a></h3>
 <aside class="aside-note"><p>The following section uses Markdown syntax. The same principles apply for RST, but with the corresponding syntax. See the RST section below for info on how you should format code segments in RST.</p>
 </aside><div class="section" id="fenced-code-blocks">
-<h3>Fenced code blocks<a class="headerlink" href="#fenced-code-blocks" title="Permalink to this headline">¶</a></h3>
+<span id="fenced-code-blocks"></span><h4>Fenced code blocks<a class="headerlink" href="#fenced-code-blocks" title="Permalink to this headline">¶</a></h4>
 <p>For code segments more than two or three words long, or for those that warrant calling the user’s attention to, use triple-backtics (<code class="docutils literal notranslate"><span class="pre">`</span></code>) or triple-tildes (<code class="docutils literal notranslate"><span class="pre">~</span></code>) to create a fenced code block. Add the language in question just after the opening triple to enable syntax higlighting.</p>
 <div class="highlight-md notranslate"><div class="highlight"><pre><span></span><span class="s">```java</span>
 <span class="kd">public</span> <span class="kd">static</span> <span class="kt">int</span> <span class="n">counter</span><span class="o">;</span>
@@ -192,7 +238,7 @@ $ javac Hello.java
 <p>Shell commands displayed in block style should include a generic prompt: <code class="docutils literal notranslate"><span class="pre">\$</span></code>. Shell commands displayed inline (as below) should <em>not</em> be prepended with <code class="docutils literal notranslate"><span class="pre">\$</span></code>.</p>
 </div>
 <div class="section" id="inline-code">
-<h3>Inline code<a class="headerlink" href="#inline-code" title="Permalink to this headline">¶</a></h3>
+<span id="inline-code"></span><h4>Inline code<a class="headerlink" href="#inline-code" title="Permalink to this headline">¶</a></h4>
 <p>For short segments, or individual code words, enclose in single backtics:</p>
 <div class="highlight-md notranslate"><div class="highlight"><pre><span></span>The <span class="sb">`static`</span> keyword in Java is used to...
 </pre></div>
@@ -210,8 +256,9 @@ $ javac Hello.java
 <aside class="aside-note"><p>One exception to this rule is when any of these elements appears in a heading. See the <a class="reference external" href="#headings">Headings</a> section for details.</p>
 </aside></div>
 </div>
+</div>
 <div class="section" id="linking">
-<h2>Linking<a class="headerlink" href="#linking" title="Permalink to this headline">¶</a></h2>
+<span id="linking"></span><h2>Linking<a class="headerlink" href="#linking" title="Permalink to this headline">¶</a></h2>
 <p>When adding a link to a page, create a <strong>semantic link</strong> if at all possible. A semantic link is one in which the text content of the link describes the destination URL. In particular, links with text content that is the destination URL itself should be <em>avoided at all costs!</em></p>
 <p>Here is a semantic link:</p>
 <aside class="aside-example"><p>Read about <a href="https://education.launchcode.org/skills-back-end-java/java4python/data-types/">data types in Java</a>.</p>
@@ -221,7 +268,7 @@ $ javac Hello.java
 <aside class="aside-"><p>Read about data types in Java at <a href="https://education.launchcode.org/skills-back-end-java/java4python/data-types/">https://education.launchcode.org/skills-back-end-java/java4python/data-types/</a>.</p>
 </aside></div>
 <div class="section" id="rst-conventions">
-<h2>RST Conventions<a class="headerlink" href="#rst-conventions" title="Permalink to this headline">¶</a></h2>
+<span id="rst-conventions"></span><h2>RST Conventions<a class="headerlink" href="#rst-conventions" title="Permalink to this headline">¶</a></h2>
 <ul class="simple">
 <li>For headings, the hierarchy of characters underlining text should be: <code class="docutils literal notranslate"><span class="pre">=</span></code> (level-1 headings), <code class="docutils literal notranslate"><span class="pre">-</span></code> (level-2 headings), <code class="docutils literal notranslate"><span class="pre">^</span></code> (level-3 headings).</li>
 <li><code class="docutils literal notranslate"><span class="pre">..</span> <span class="pre">sourcecode::</span></code> and <code class="docutils literal notranslate"><span class="pre">..</span> <span class="pre">code-block::</span></code> are synonymous directives for creating fenced code blocks, but we prefer <code class="docutils literal notranslate"><span class="pre">..</span> <span class="pre">sourcecode::</span></code>.</li>
@@ -232,7 +279,7 @@ $ javac Hello.java
 </ul>
 </div>
 <div class="section" id="language-conventions">
-<h2>Language Conventions<a class="headerlink" href="#language-conventions" title="Permalink to this headline">¶</a></h2>
+<span id="language-conventions"></span><h2>Language Conventions<a class="headerlink" href="#language-conventions" title="Permalink to this headline">¶</a></h2>
 <ul class="simple">
 <li>Use the Oxford comma!</li>
 <li>Use a single space after end-of-sentence punctuation!</li>

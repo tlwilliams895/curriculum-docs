@@ -163,7 +163,7 @@ The customized theme for LaunchCode Education sites supports a collection of cal
 
 <aside class="aside-note">
 
-The custom aside boxes are likely to evolve in style to match the default styling of RST admonitions provided by Bootstrap.
+The custom aside boxes are likely to evolve in style to match the styling of RST admonitions.
 
 </aside>
 
