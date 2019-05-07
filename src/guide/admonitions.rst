@@ -10,8 +10,8 @@ Note                ``.. note::``
 Warning             ``.. warning::``
 Tip                 ``.. tip::``
 Question            ``.. admonition:: Question``
-Example             ``.. example:: Example``
-Examples             ``.. example:: Examples``
+Example             ``.. admonition:: Example``
+Examples            ``.. admonition:: Examples``
 Try It!             ``.. admonition:: Try It!``
 Fun Fact            ``.. admonition:: Fun Fact``
 ==================  ============================
@@ -21,7 +21,7 @@ Avoid using other RST admonitions, as well as over-using custom admonitions. Cus
 Admonition Usage
 ----------------
 
-Strive to use admonitions consistently. Admonitions are effective only when the enhance the readibility of a text. If admonition usage is inconsistent, then readers will learn to ignore the titles, decreasing the effectiveness of all admonitions.
+Strive to use admonitions consistently. Admonitions are effective only when they enhance the readibility of a text. If admonition usage is inconsistent, then readers will learn to ignore the titles, decreasing the effectiveness of all admonitions.
 
 .. note:: 
 

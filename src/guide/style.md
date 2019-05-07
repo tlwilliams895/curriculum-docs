@@ -66,7 +66,7 @@ It is also acceptable to use all-caps to emphasize text. However, we prefer ital
 
 <aside class="aside-example">
 
-JavaScript DOES NOT allow you to specify the types of parameters, though the JavaScript extension TypeScript does.
+JavaScript does NOT allow you to specify the types of parameters, though the JavaScript extension TypeScript does.
 
 </aside>
 
