@@ -6,9 +6,9 @@ For general grammar, style, and punctuation guidelines not covered here, refer t
 
 ## Headings
 
-For headings, use sentence case (all major words of the headline capitalized). For the definition of "major word" we defer to AP style:
+For headings, use title case (all major words of the headline capitalized). For the definition of "major word" we defer to AP style:
 
-> Capitalize the first word of every letter except articles, coordinating conjunctions, and prepositions of three letters or fewer. There’s one exception: Any word that is the first word in the headline or the last word should be capitalized, regardless of its part of speech.
+> Capitalize the first letter of every word except articles, coordinating conjunctions, and prepositions of three letters or fewer. There’s one exception: Any word that is the first word in the headline or the last word should be capitalized, regardless of its part of speech.
 
 Every page should begin with a level-1 heading, and heading levels should never be skipped. For example, do not use a level-3 heading below a level-1 heading without a level-2 heading in between.
 
