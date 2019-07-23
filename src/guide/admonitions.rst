@@ -21,11 +21,11 @@ Avoid using other RST admonitions, as well as over-using custom admonitions. Cus
 Admonition Usage
 ----------------
 
-Strive to use admonitions consistently. Admonitions are effective only when they enhance the readibility of a text. If admonition usage is inconsistent, then readers will learn to ignore the titles, decreasing the effectiveness of all admonitions.
+Strive to use admonitions consistently. Admonitions are effective only when they enhance the readability of a text. If admonition usage is inconsistent, then readers will learn to ignore the titles, decreasing the effectiveness of all admonitions.
 
 .. note:: 
 
-   The Note is probably the most widely used admonition. It should be used to call attention to a an important point. Often, Notes will also deviate from the main flow of discussion a bit. 
+   The Note is probably the most widely used admonition. It should be used to call attention to an important point. Often, Notes will also deviate from the main flow of discussion a bit. 
 
 .. warning:: 
 
