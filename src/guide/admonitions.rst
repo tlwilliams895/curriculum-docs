@@ -33,7 +33,7 @@ Strive to use admonitions consistently. Admonitions are effective only when they
 
 .. tip:: 
 
-   Use a Tip to 
+   Use a Tip to offer a helpful hint or piece of advice.
 
 .. admonition:: Question
 
