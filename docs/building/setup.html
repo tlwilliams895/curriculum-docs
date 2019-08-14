@@ -7,11 +7,12 @@
     <title>Setting Up A New Module Site &#8212; LaunchCode Curriculum Docs  documentation</title>
     <link rel="stylesheet" href="../_static/bootstrap-sphinx.css" type="text/css" />
     <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
-    <link rel="stylesheet" href="../_static/css/launchcode.css" type="text/css" />
-    <script type="text/javascript" src="../_static/documentation_options.js"></script>
+    <link rel="stylesheet" type="text/css" href="../_static/css/launchcode.css" />
+    <script type="text/javascript" id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
     <script type="text/javascript" src="../_static/jquery.js"></script>
     <script type="text/javascript" src="../_static/underscore.js"></script>
     <script type="text/javascript" src="../_static/doctools.js"></script>
+    <script type="text/javascript" src="../_static/language_data.js"></script>
     <script type="text/javascript" src="../_static/js/jquery-1.11.0.min.js"></script>
     <script type="text/javascript" src="../_static/js/jquery-fix.js"></script>
     <script type="text/javascript" src="../_static/bootstrap-3.3.7/js/bootstrap.min.js"></script>
@@ -128,7 +129,8 @@
             
 <form class="navbar-form navbar-right" action="../search.html" method="get">
  <div class="form-group">
-  <input type="text" name="q" class="form-control" placeholder="Search" />
+    <label for="q" class="searchLabel">Search</label>
+    <input type="text" name="q" class="form-control" />
  </div>
   <input type="hidden" name="check_keywords" value="yes" />
   <input type="hidden" name="area" value="default" />
@@ -194,7 +196,7 @@ Python 3.6.5
 <div class="section" id="sphinx-setup">
 <span id="sphinx-setup"></span><h2>Sphinx Setup<a class="headerlink" href="#sphinx-setup" title="Permalink to this headline">¶</a></h2>
 <p>Install <a class="reference external" href="http://www.sphinx-doc.org/en/master/">Sphinx</a>:</p>
-<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>$ pip install sphinx
+<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>$ pip install sphinx==1.8.5
 </pre></div>
 </div>
 <p>Install <a class="reference external" href="https://recommonmark.readthedocs.io/en/latest/">Recommonmark</a> to allow for writing of Markdown files in Sphinx:</p>

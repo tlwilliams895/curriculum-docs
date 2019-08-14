@@ -1,6 +1,7 @@
 # Curriculum Accessibility
 
 ## WCAG 2.0
+
 The internationally-accepted guidelines for web accessibility are the [WCAG 2.0](https://www.w3.org/TR/WCAG20/), which was published by the [W3C](https://www.w3.org/). At this time, the U.S. Federal Government has not issued separate guidelines for web accessibility.
 
 ```eval_rst
@@ -139,16 +140,17 @@ Color contrast plays a big role in determining how readable our materials are fo
 ```
 
 ### Colors and Comparisons
+
 LaunchCode Education uses all of LaunchCode's colors. Below is a table of compliant color combinations.
 
 ```eval_rst
 ========== ========= =================== =========== ====================
 Color One  Color Two Level of Compliance Color Ratio Comparison
 ========== ========= =================== =========== ====================
-Dark Blue  White     Level AAA           9.14 : 1    `Comparison Swatches <https://contrast-ratio.com/#%23354a5f-on-white/>`_
-Dark Blue  Grey      Level AA            5.58 : 1    `Comparison Swatches <https://contrast-ratio.com/#%23354a5f-on-%23cacacb/>`_
-Dark Blue  Orange    Acceptable          3.31 : 1    `Comparison Swatches <https://contrast-ratio.com/#%23354a5f-on-%23f47753/>`_
-Light Blue White     Acceptable          3.19 : 1    `Comparison Swatches <https://contrast-ratio.com/#%235c94ce-on-white/>`_
+Dark Blue  White     Level AAA           9.14 : 1    `Comparison Swatches <https://contrast-ratio.com/#%23354a5f-on-white/>`__
+Dark Blue  Grey      Level AA            5.58 : 1    `Comparison Swatches <https://contrast-ratio.com/#%23354a5f-on-%23cacacb/>`__
+Dark Blue  Orange    Acceptable          3.31 : 1    `Comparison Swatches <https://contrast-ratio.com/#%23354a5f-on-%23f47753/>`__
+Light Blue White     Acceptable          3.19 : 1    `Comparison Swatches <https://contrast-ratio.com/#%235c94ce-on-white/>`__
 ========== ========= =================== =========== ====================
 ```
 
@@ -158,11 +160,11 @@ When working with the CoderGirl sites, LaunchCode Education uses the specific Co
 ========== ========= =================== =========== ====================
 Color One  Color Two Level of Compliance Color Ratio Comparison
 ========== ========= =================== =========== ====================
-Dark Blue  Green     Acceptable          4.1 : 1     `Comparison Swatches <https://contrast-ratio.com/#%2361c08d-on-%23354a5f/>`_
-Dark Blue  Grey      Level AA            5.58 : 1    `Comparison Swatches <https://contrast-ratio.com/#%23354a5f-on-%23cacacb/>`_
-Dark Blue  Orange    Level AA            4.99 : 1    `Comparison Swatches <https://contrast-ratio.com/#%23faaf79-on-%23354a5f/>`_
-Dark Blue  White     Level AAA           9.14 : 1    `Comparison Swatches <https://contrast-ratio.com/#%23354a5f-on-white/>`_
-Light Blue White     Acceptable          3.19 : 1    `Comparison Swatches <https://contrast-ratio.com/#%235c94ce-on-white/>`_
+Dark Blue  Green     Acceptable          4.1 : 1     `Comparison Swatches <https://contrast-ratio.com/#%2361c08d-on-%23354a5f/>`__
+Dark Blue  Grey      Level AA            5.58 : 1    `Comparison Swatches <https://contrast-ratio.com/#%23354a5f-on-%23cacacb/>`__
+Dark Blue  Orange    Level AA            4.99 : 1    `Comparison Swatches <https://contrast-ratio.com/#%23faaf79-on-%23354a5f/>`__
+Dark Blue  White     Level AAA           9.14 : 1    `Comparison Swatches <https://contrast-ratio.com/#%23354a5f-on-white/>`__
+Light Blue White     Acceptable          3.19 : 1    `Comparison Swatches <https://contrast-ratio.com/#%235c94ce-on-white/>`__
 ========== ========= =================== =========== ====================
 ```
 

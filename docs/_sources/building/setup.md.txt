@@ -33,7 +33,7 @@ If you don't have a sufficient Python install, we recommend installing [Minicond
 Install [Sphinx](http://www.sphinx-doc.org/en/master/):
 
 ```
-$ pip install sphinx
+$ pip install sphinx==1.8.5
 ```
 
 Install [Recommonmark](https://recommonmark.readthedocs.io/en/latest/) to allow for writing of Markdown files in Sphinx:
