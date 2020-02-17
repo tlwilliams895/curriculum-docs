@@ -21,7 +21,6 @@ Style and Formatting
 
    guide/style
    guide/admonitions
-   guide/aside-boxes
    guide/accessibility
 
 Creating Curriculum

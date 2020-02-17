@@ -43,7 +43,7 @@ You can think of learning objectives as your unit tests for your
 curriculum, and your curriculum development should follow a test-driven
 development pattern. Just as unit tests define the intended behavior of
 an application, learning objectives define the intended outcomes of a
-lesson. Just as unit tests are often used to create “self-documenting”
+lesson. Just as unit tests are often used to create "self-documenting"
 code, learning objectives serve as documentation for your curriculum
 that can be useful to students, TAs, and LaunchCode staff.
 
@@ -110,7 +110,7 @@ use a test-driven approach:
 Prep Work
 ~~~~~~~~~
 
-Many LaunchCode courses use a “flipped classroom” approach to deliver
+Many LaunchCode courses use a "flipped classroom" approach to deliver
 lesson content outside the classroom. This is beneficial for courses
 where in-class time is limited, allowing time with instructors and TAs
 to be focused on helping learners overcome specific difficulties and
@@ -142,7 +142,7 @@ Some activities that can be useful to this end are:
 -  Conceptual review and Q&A
 -  Presentation of examples, focusing on potentially confusing and/or
    important areas of the lesson
--  Hands-on practice (aka “studios”) using an instructor-created
+-  Hands-on practice (aka "studios") using an instructor-created
    activity
 -  Peer-to-peer/group practice, such as pair programming, mob
    programming, or peer-to-peer coding challenges
@@ -159,7 +159,7 @@ knowledge and skills. When creating assignments, refer to the learning
 objectives for the associated lessons to ensure that an assignment
 covers the most important (if not all) associated learning objectives.
 
-Assignments should have **specifications** (“specs”), which outline the
+Assignments should have **specifications** ("specs"), which outline the
 objectives and tasks for the learner. A spec should include:
 
 -  Assignment objectives
