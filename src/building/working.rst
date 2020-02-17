@@ -228,18 +228,6 @@ support Markdown tables in Sphinx via a source-translation approach (MD
 and is in the template development backlog. If you absolutely need to
 use tables in your pages, we recommend using RST instead.
 
-Aside Boxes
-^^^^^^^^^^^
-
-The customized theme for LaunchCode Education sites supports a
-collection of callout boxes (aka "aside boxes" or "admonitions") via
-CSS. Read the `detailed usage notes </guide/content.html>`__ to include
-these in your pages.
-
-.. note:: 
-
-   The custom aside boxes are likely to evolve in style to match the styling of RST admonitions.
-
 Site Style
 ~~~~~~~~~~
 

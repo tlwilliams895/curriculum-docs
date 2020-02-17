@@ -260,7 +260,7 @@ font size decreases. The acceptable ratios are:
 
 .. note::
 
-   Please note, someone who is legally blind has 20/200 central vision acuity.
+   Someone who is legally blind has 20/200 central vision acuity.
 
 Colors and Comparisons
 ~~~~~~~~~~~~~~~~~~~~~~
