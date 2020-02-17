@@ -50,7 +50,7 @@ Viewing the Site Locally
 ------------------------
 
 When updating a site, you should build and proof your changes locally
-before committing them. To do this, we’ll use Python’s ``http.server``
+before committing them. To do this, we'll use Python's ``http.server``
 module.
 
 macOS and Linux
@@ -63,7 +63,7 @@ Add the following line to your ``~/.bash_profile`` (macOS) or
 
    alias serve='python -m http.server'
 
-Open a second terminal window and navigate to the project’s ``/docs``
+Open a second terminal window and navigate to the project's ``/docs``
 folder. Then run:
 
 ::
@@ -103,7 +103,7 @@ Then add the following line to your ``.bashrc`` file:
 
    alias serve='python -m http.server'
 
-Open a second terminal window and navigate to the project’s ``/docs``
+Open a second terminal window and navigate to the project's ``/docs``
 folder. Then run:
 
 ::
@@ -144,7 +144,7 @@ Cons
 Working with RST
 ^^^^^^^^^^^^^^^^
 
-reStructuredText can have a bit of a learning curve if you’re accustomed
+reStructuredText can have a bit of a learning curve if you're accustomed
 to Markdown. That said, once you get used to the basics it has definite
 advantages to using MD.
 
@@ -153,7 +153,7 @@ Primer <http://www.sphinx-doc.org/en/stable/rest.html>`__, and bookmark
 it as a reference. A modest familiarity with RST with go a long way
 toward allowing you to create rich curriculum pages.
 
-Here are a few things to note if you’re new to RST:
+Here are a few things to note if you're new to RST:
 
 -  RST is sensitive to whitespace in some cases. For example, when using
    a directive, the contents of the directive must be indented to align
@@ -216,7 +216,7 @@ Working with Markdown
 
 Many developers are already familiar with Markdown syntax. However, we
 still encourage all contributors to skim the `CommonMark
-docs <http://commonmark.org/help/>`__ to make sure you’re using features
+docs <http://commonmark.org/help/>`__ to make sure you're using features
 built into CommonMark, which is a smaller spec than many others.
 
 Tables
@@ -238,8 +238,8 @@ curriculum sites, while providing for consistency across sites.
 Deploying
 ---------
 
-Once you’ve made some changes to the site–edit, built, test,
-commit–you’re ready to deploy. How to do this depends on your role.
+Once you've made some changes to the site–edit, built, test,
+commit–you're ready to deploy. How to do this depends on your role.
 
 Non-Staff Contributions
 ~~~~~~~~~~~~~~~~~~~~~~~
@@ -257,9 +257,9 @@ Staff Contributions
 ~~~~~~~~~~~~~~~~~~~
 
 All Education Team staff should have push permission for the
-repositories that they’re working on. Pushing changes to the GitHub repo
+repositories that they're working on. Pushing changes to the GitHub repo
 will automatically deploy the new files.
 
 .. warning:: 
    
-   Changes to GitHub Pages sites can take several minutes to be reflected. If you push and don’t see your change, wait a few minutes and do a hard refresh of the page.
+   Changes to GitHub Pages sites can take several minutes to be reflected. If you push and don't see your change, wait a few minutes and do a hard refresh of the page.

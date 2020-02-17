@@ -16,7 +16,7 @@ capitalized). For the definition of "major word" we defer to AP style:
 
    Capitalize the first letter of every word except articles,
    coordinating conjunctions, and prepositions of three letters or
-   fewer. There’s one exception: Any word that is the first word in the
+   fewer. There's one exception: Any word that is the first word in the
    headline or the last word should be capitalized, regardless of its
    part of speech.
 
@@ -28,7 +28,7 @@ Use headings to segment content by topic. *Do not* use headings for
 emphasis.
 
 Headings should also enable easy reference. When writing a heading,
-consider how well it describes the section’s contents. If a reader saw
+consider how well it describes the section's contents. If a reader saw
 the heading in a table of contents, would they have a general idea of
 what it contains?
 
@@ -44,9 +44,9 @@ use italics.
 
 .. admonition:: Example
 
-   Ryan said, "I used to think less was more, but now I’m thinking more is more!"
+   Ryan said, "I used to think less was more, but now I'm thinking more is more!"
 
-   You might be thinking to yourself, *JavaScript sure is a crazy language!* And you’d be right.
+   You might be thinking to yourself, *JavaScript sure is a crazy language!* And you'd be right.
 
 The only other proper use of quotes is to refer to a word as an object
 within a sentence.
@@ -136,7 +136,7 @@ Fenced code blocks
 ^^^^^^^^^^^^^^^^^^
 
 For code segments more than two or three words long, or for those that
-warrant calling the user’s attention to, use triple-backtics
+warrant calling the user's attention to, use triple-backtics
 (:literal:`\``) or triple-tildes (``~``) to create a fenced code block.
 Add the language in question just after the opening triple to enable
 syntax highlighting.
@@ -155,7 +155,7 @@ Some common language identifiers supported by Pygments are: ``java``,
 ``python``, ``csharp``, ``html``, ``css``, ``js``, and ``sql``. A `full
 list of supported languages <http://pygments.org/languages/>`__ is
 available. To find the language identifier for a supported language,
-refer to the "Short name" property of the language’s lexer from the
+refer to the "Short name" property of the language's lexer from the
 `full list of Pygments lexers <http://pygments.org/docs/lexers/>`__.
 
 For terminal/shell commands, no language identifier is used:

@@ -81,7 +81,7 @@ Run through WCAG Checklist
 ~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 The WCAG are incredibly long and ever-changing. A good way to test your
-site’s accessibility is by looking at the site through different lenses.
+site's accessibility is by looking at the site through different lenses.
 Steven Lambert broke down the Lenses of Accessibility in his article,
 `Designing for Accessibility and
 Inclusion <https://www.smashingmagazine.com/2018/04/designing-accessibility-inclusion/>`__.
@@ -172,7 +172,7 @@ Inclusion <https://www.smashingmagazine.com/2018/04/designing-accessibility-incl
 
     1. Is the site ordered in a way that makes sense for keyboard users?
 
-       -  No: Turn on keyboard navigation in your computer’s System
+       -  No: Turn on keyboard navigation in your computer's System
           Preferences and check out the site to see if the page can be
           ordered better.
        -  Yes: Move on to the next lens.
@@ -265,7 +265,7 @@ font size decreases. The acceptable ratios are:
 Colors and Comparisons
 ~~~~~~~~~~~~~~~~~~~~~~
 
-LaunchCode Education uses all of LaunchCode’s colors. Below is a table
+LaunchCode Education uses all of LaunchCode's colors. Below is a table
 of compliant color combinations.
 
 ========== ========= =================== =========== ====================
@@ -303,7 +303,7 @@ Headings
 ~~~~~~~~
 
 Many screen reader users will navigate through the page first by
-headings. This is why it is important to make sure that headings don’t
+headings. This is why it is important to make sure that headings don't
 skip levels.
 
 What not to do: 
@@ -359,8 +359,8 @@ Videos are another form of non-text content. Because of the combination
 of audio and video, developers should double check that they have
 provided as many accessibility aids as possible.
 
-Since many users are already accustomed to YouTube’s platform, one quick
-thing a developer can do to ease the user’s experience can be providing
+Since many users are already accustomed to YouTube's platform, one quick
+thing a developer can do to ease the user's experience can be providing
 a link to the video on YouTube in addition to embedding it within the
 site.
 

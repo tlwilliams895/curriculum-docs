@@ -25,9 +25,9 @@ On some systems, Python 3 will be installed as ``python3``:
 
 .. note::
 
-   If you are using ``python3``, you’ll need to use ``pip3`` wherever ``pip`` is used in the sections below.
+   If you are using ``python3``, you'll need to use ``pip3`` wherever ``pip`` is used in the sections below.
 
-If you don’t have a sufficient Python install, we recommend installing
+If you don't have a sufficient Python install, we recommend installing
 `Miniconda <https://conda.io/miniconda.html>`__.
 
 Sphinx Setup
@@ -54,7 +54,7 @@ theme.
 
    $ pip install git+https://github.com/LaunchCodeEducation/sphinx-bootstrap-theme.git@master
 
-Install pypandoc because if you don’t, you will see an error after
+Install pypandoc because if you don't, you will see an error after
 running build
 
 ::
@@ -88,7 +88,7 @@ Clone the site template into a new directory:
 
    $ git clone git@github.com:LaunchCodeEducation/curriculum-module-template.git SITE_NAME
 
-Alternatively, if you don’t have an SSH key configured for your GitHub
+Alternatively, if you don't have an SSH key configured for your GitHub
 account, use HTTP:
 
 ::
@@ -96,7 +96,7 @@ account, use HTTP:
    $ git clone http://github.com/LaunchCodeEducation/curriculum-module-template SITE_NAME
 
 Move into the new project directory. Make the module template repository
-the new site’s ``upstream`` remote, for ease of updating the site when
+the new site's ``upstream`` remote, for ease of updating the site when
 the ``curriculum-module-template`` repository is updated:
 
 ::
@@ -173,9 +173,9 @@ Before you can commit, remove the following line from ``.gitignore``:
    At this point, it is very important to make sure you followed the directions above to point your ``origin`` remote at the right location.
 
 After the build successfully completes, add and commit the built site.
-You’ll have several new files and directories in this commit, since it
-will be the first (and only) time many of the site’s static files are
-moved into the ``/docs``, from which they’ll be served.
+You'll have several new files and directories in this commit, since it
+will be the first (and only) time many of the site's static files are
+moved into the ``/docs``, from which they'll be served.
 
 ::
 
@@ -186,7 +186,7 @@ moved into the ``/docs``, from which they’ll be served.
 Publishing via GitHub Pages
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-From the repository’s *Settings* page, enable GitHub Pages via the
+From the repository's *Settings* page, enable GitHub Pages via the
 ``/docs`` directory.
 
 .. figure:: /_static/images/enable-gh-pages.png
@@ -211,7 +211,7 @@ to at least configure:
    -  ``bootswatch_theme``: Either ``launchcode`` or ``codergirl``,
       depending on the intended program for the module being published.
 
--  ``project``: The name of the curriculum module (e.g. "LaunchCode’s
+-  ``project``: The name of the curriculum module (e.g. "LaunchCode's
    Liftoff")
 -  If creating a site for CoderGirl, set
    ``html_logo = '_static/images/logos/codergirl-white.png'``
@@ -219,7 +219,7 @@ to at least configure:
 Updating the Theme or Styles
 ----------------------------
 
-Occasionally the site’s theme or styles will be updated. We discuss how
+Occasionally the site's theme or styles will be updated. We discuss how
 to get and deploy such changes.
 
 Updating site styles
@@ -246,7 +246,7 @@ for any new files added by this merge. The merge may bring in images or
 Updating the site template
 ~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-To update the site’s template, update your local install of
+To update the site's template, update your local install of
 ``sphinx-bootstrap-template`` (``--upprade`` forces the package to be
 downloaded again):
 

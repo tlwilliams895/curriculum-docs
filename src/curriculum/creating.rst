@@ -1,9 +1,6 @@
 How To Create Curriculum
 ========================
 
-.. contents::
-   :local:
-
 Introduction
 ------------
 
@@ -15,8 +12,8 @@ best practices.
 
 This guide is evolving, and is not intended to be a firm set of rules to
 be followed. Feel free to adapt guidelines to your specific circumstance
-and to suggest improvements. If there is something you’ve found works
-well to facilitate learning that hasn’t been included here, let us know.
+and to suggest improvements. If there is something you've found works
+well to facilitate learning that hasn't been included here, let us know.
 
 If you have questions about anything in this guide, or want some input
 on how to best approach your curriculum development, reach out to a
@@ -66,7 +63,7 @@ Each of these examples do one or both of:
 -  Define the **knowledge** that a learner should obtain. That is, what
    is the mental concept that the learner will be able to demonstrate?
    Acquisition of the given conceptual knowledge is typically verified
-   by the learner’s ability to explain the concept with concrete
+   by the learner's ability to explain the concept with concrete
    examples.
 -  Define the **skill** that the learner should obtain. That is, what
    should the learner should be able to do? Acquisition of the given
@@ -78,10 +75,10 @@ that a learner can demonstrate the ability to carry out a certain task,
 and not that they demonstrate a full conceptual understanding of a task.
 For example:
 
--  Use the rules defined by a web framework’s object-relational mapping
+-  Use the rules defined by a web framework's object-relational mapping
    library to configure persistent model classes.
 
-Here, we’re specifying that it is important for a learner to be able to
+Here, we're specifying that it is important for a learner to be able to
 use the defined rules for configuring persistent model classes, without
 understanding the full mechanism of how the ORM library actually carries
 out the work of persisting instances of these classes. So we may not
@@ -95,7 +92,7 @@ knowledge without a demonstrated skill–might be:
 -  Describe how a web browser parses an HTML document and turns it into
    a rendered web page.
 
-Here, we don’t intend that a learner can actually parse a document and
+Here, we don't intend that a learner can actually parse a document and
 render a page, but that they have a conceptual understanding of this
 process.
 
@@ -110,7 +107,7 @@ use a test-driven approach:
 Prep Work
 ~~~~~~~~~
 
-Many LaunchCode courses use a "flipped classroom" approach to deliver
+Many LaunchCode courses use a **flipped classroom** approach to deliver
 lesson content outside the classroom. This is beneficial for courses
 where in-class time is limited, allowing time with instructors and TAs
 to be focused on helping learners overcome specific difficulties and
@@ -220,8 +217,8 @@ access to curriculum content.
 Sphinx / GitHub Pages
 ~~~~~~~~~~~~~~~~~~~~~
 
-- `codergirl.launchcode.org <https://codergirl.launchcode.org/>`__
 - `education.launchcode.org <https://education.launchcode.org/>`__
+- `codergirl.launchcode.org <https://codergirl.launchcode.org/>`__
 
 Most curriculum content is hosted using GitHub Pages, using the Sphinx
 static site generator to generate static pages from Markdown and RST. These sites are set up and administered by LaunchCode
