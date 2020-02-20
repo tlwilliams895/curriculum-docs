@@ -13,22 +13,26 @@ The basic components of planning the lesson are:
 #. Write an outline to follow while recording
 
 Lesson Tips
-~~~~~~~~~~~
+^^^^^^^^^^^
 
-**Go through the project yourself, in detail, before recording.** You might feel like you can "wing it" but even with simple examples, you put yourself at risk of stumbling across something you didn't plan on. Maybe there is a project dependency you forgot you needed, or you forgot the API details for a library. Going through your lesson step-by-step before recording will result in a better end result.
+**Go through the project yourself, in detail, before recording.** You might feel like you can wing it, but, even with simple examples, you put yourself at risk of stumbling across something you didn't plan on. There might a project dependency you forgot you needed, or perhaps you forgot the API details for a library. Going through your lesson step-by-step before recording will result in a better end result.
 
-**Make high-level process notes to serve as a script.** It can be easy to forget where you are, and what is next, when recording a lesson. Make a bullet-point list of the steps and keep it next to your computer for reference while recording.
+**Make high-level process notes to serve as a script.** It can be easy to forget where you are, and what is next, when recording a lesson. Make a bullet-point list of the steps and keep it next to your computer for reference while recording. How detailed this outline should be is a matter of personal preference. 
 
-**Keep it short, breaking the lesson into multiple steps if necessary.** Lesson videos should be less than 20 minutes total. If you're creating a longer lesson or project, break it up into logical sections. At the beginning of each section, remind the learner that the video is part of a larger series, and they should have viewed the earlier videos before beginning the current video.
+**Keep it short, breaking the lesson into multiple steps if necessary.** Lesson videos should be less than 20 minutes total, and ideally less than 10 if the topic allows. If you're creating a longer lesson or project, break it up into logical sections. At the beginning of each section, remind the learner that the video is part of a larger series, and they should have viewed the earlier videos before beginning the current video.
 
 Tech Setup and Recording
 ------------------------
+
+Setup
+^^^^^
 
 .. note:: We currently only provide instructions for Mac computers. 
 
 We'll use Quicktime and `Loopback <https://rogueamoeba.com/loopback/>`__ to record and route audio, respectively. You already have Quicktime, but you'll need to install Loopback.
 
 .. note::
+
    Without paying for a Loopback license, audio quality will be
    degraded after 20 minutes. Keep recordings shorter than this (though
    you should be doing so for pedagogical reasons, anyway).
@@ -41,7 +45,7 @@ LaunchCode can lend you a recording kit for making a lesson. Your kit will conta
 -  Headphones w/ ⅛" to ¼" adapter
 -  Tabletop mic stand
 
-Setting up the equipment
+Setting Up the Equipment
 ^^^^^^^^^^^^^^^^^^^^^^^^
 
 1. Plug the USB cable into the back of the Audiobox, and plug the other end into your computer. Audiobox will now be available as an audio input device.
@@ -57,7 +61,7 @@ Setting up the equipment
 .. image:: /_static/images/audiobox-setup.jpg
    :width: 600px
 
-Setting up the software
+Setting Up the Software
 ^^^^^^^^^^^^^^^^^^^^^^^
 
 1. Open Loopback and add a device from the left-hand menu. This new device will be a "virtual" audio source through which we'll route the mono/left channel microphone audio to a stereo output.
@@ -80,6 +84,7 @@ Setting up the software
 
    .. image:: /_static/images/quicktime-audio-source.png
       :width: 500px
+
 
 Recording
 ^^^^^^^^^
@@ -104,7 +109,7 @@ Follow these steps to prepare for and make your lesson recording.
 
    Begin by introducing yourself and describing the lesson. You may use this intro as a template:
 
-      "Hi, I'm (your name) with LaunchCode. In this lesson for the (topic) learning track we will (lesson overview)."
+      "Hi, I'm (your name) with LaunchCode. In this lesson for (course name) we will (lesson overview)."
 
 When you are done recording, click the Stop icon in the menu bar and save the video file.
 
@@ -113,8 +118,8 @@ Tips
 
 -  It's okay to mess up. If you make a mistake, take a moment, make a note of what needs to be edited, back up, and continue.
 -  It can be a good thing to work through an error or bug in the lesson; this normalizes the situation for learners. If learners only see you going through examples perfectly, with no mistakes, then they get the impression that more experienced developers never make mistakes.
--  As you go, describe what you're going to do at a high level before doing it. This helps learners understand and follow along.
--  Create a branch or tag for the final (and optionally starting) code from the lesson, to link to within the lesson page.
+-  As you go, describe what you are going to do at a high level before doing it. This helps learners understand the objective and follow along.
+-  Create a branch or tag for the final (and, optionally, starting) code from the lesson to link to within the lesson page.
 
 Publishing
 ----------
