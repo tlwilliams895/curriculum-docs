@@ -15,7 +15,7 @@ The basic components of planning the lesson are:
 Lesson Tips
 ^^^^^^^^^^^
 
-**Go through the project yourself, in detail, before recording.** You might feel like you can wing it, but, even with simple examples, you put yourself at risk of stumbling across something you didn't plan on. There might a project dependency you forgot you needed, or perhaps you forgot the API details for a library. Going through your lesson step-by-step before recording will result in a better end result.
+**Go through the project yourself, in detail, before recording.** You might feel like you can wing it, but, even with simple examples, you put yourself at risk of stumbling across something you didn't plan on. There might be a project dependency you forgot you needed, or perhaps you forgot the API details for a library. Going through your lesson step-by-step before recording will result in a better end result.
 
 **Make high-level process notes to serve as a script.** It can be easy to forget where you are, and what is next, when recording a lesson. Make a bullet-point list of the steps and keep it next to your computer for reference while recording. How detailed this outline should be is a matter of personal preference. 
 
